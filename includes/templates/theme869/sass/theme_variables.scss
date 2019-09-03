@@ -1,0 +1,223 @@
+// ------- FONTS -------
+
+$font-family:				  		'Ubuntu', sans-serif;
+$font:						  		300 12px/18px $font-family;
+$font-custom:                 		'Ubuntu', sans-serif;
+$font-custom2:                 		'Ubuntu', sans-serif;
+$font-weight:                 		400;
+$font-icon:                   		"FontAwesome";
+
+
+@mixin subpages-elements-bg{
+	background: #fafafa;
+	border:$border;
+	color: #888;
+}
+
+// ------- COLORS -------
+
+$color:			        #19caaf;
+$color1:			    #f6f6f6;
+$color2:			    #24918a;
+$color3:			    #2f2f2f;
+$color-main:			#888;
+$color-heading:			#2f2f2f;
+$color-hover:			#1ba38e;
+
+// ------- BORDERS -------
+
+$border:					    1px solid #e5e5e5;
+$border1:					    1px solid #e5e5e5;
+$border-main-color:				#e5e5e5;
+$border-main:					1px solid #e5e5e5;
+$border-subcat:					4px solid #fff;
+$border-subcat-hov:				4px solid #19caaf;
+
+// ------- PRODUCTS -------
+@mixin product-name{
+	color:$color-heading;
+	font:300 13px/18px $font-custom;
+	text-align: left;
+}
+
+$product-name-hover:				 #19caaf;
+
+@mixin description-text{
+	color:#888;
+	font:300 12px/18px $font-custom;
+}
+@mixin price{
+	color:$color;
+	font:400 19px/24px $font-custom;
+	vertical-align: middle;
+}
+@mixin price-old{
+	color:#777;
+	font:300 15px/24px $font-custom;
+	text-decoration:line-through;
+	padding:0 5px;
+	vertical-align: middle;
+}
+@mixin price-lh {
+	font:400 19px/24px $font-custom;
+}
+
+// ------- BUTTONS -------
+@mixin button-default{
+	padding:5px 15px;
+	background:$color;
+	color:#fff;
+	border:0;
+	position: relative;
+	font:300 12px/20px $font-custom;
+	text-transform: uppercase;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	&:hover{
+		background:$color-heading;
+		color: #fff;
+	}
+}
+
+@mixin button-alternative{
+	padding:5px 15px;
+	background:$color;
+	color:#fff;
+	border:0;
+	position: relative;
+	font:300 12px/20px $font-custom;
+	text-transform: uppercase;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	&:hover{
+		background:$color-heading;
+		color: #fff;
+	}
+}
+@mixin add-to-cart{
+	width: 38px;
+	height: 38px;
+	overflow: hidden;
+	text-align:center;
+	padding: 0;
+	background-color: $color;
+	webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	border-radius: 500px;
+	span{
+		display: none;
+	}
+	&:before{
+		font-family:$font-icon;
+		content:url(../images/cart2.png);
+		position: relative;
+		color: #c2c2c2;
+		line-height: 42px;
+		font-size: 20px;
+		display: inline-block;
+		left: 0;
+		top: 0;
+		@include transition;
+	}
+	&:hover{
+		background-color: $color3;
+		&:before{
+			color:#fff;
+		}
+	}
+}
+@mixin btn-details {
+	width: 38px;
+	height: 38px;
+	overflow: hidden;
+	text-align:center;
+	padding: 0;
+	background-color: #f2f2f2;
+	webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	border-radius: 500px;
+	span{
+		display: none;
+	}
+	&:before{
+		font-family:$font-icon;
+		content:"\f08a";
+		position: relative;
+		color: #c2c2c2;
+		line-height: 38px;
+		font-size: 20px;
+		display: inline-block;
+		left: 0;
+		top: 0;
+		@include transition;
+	}
+	&:hover{
+		background-color: $color3;
+		&:before{
+			color:#fff;
+		}
+	}
+}
+
+// ------- TITLES -------
+@mixin sub-heading{
+	position: relative;
+	overflow: hidden;
+	display: block;
+	background-color: #f2f2f2;
+	color:$color-heading;
+	font:400 15px/25px $font-custom;
+	text-transform:none;
+	text-align: left;
+	border: 0;
+	width:100%;
+	padding:10px 22px;
+	margin:0 0 30px;
+}
+@mixin sub-heading-col{
+	position: relative;
+	overflow: hidden;
+	display: block;
+	background-color: #f2f2f2;
+	color:$color-heading;
+	font:400 15px/25px $font-custom;
+	text-transform:none;
+	text-align: left;
+	border: 0;
+	width:100%;
+	padding:10px 22px;
+	margin:0 0 30px;
+}
+@mixin breadcrumb_bg {
+	position: relative;
+	background: #fafafa;
+}
+
+// ------- OTHER -------
+
+$trans-grad: all .4s linear;
+
+@mixin transition {
+	-moz-transition: all 0.4s ease 0s;
+	-webkit-transition: all 0.4s ease 0s;
+	-o-transition: all 0.4s ease 0s;
+}
+@mixin transition1 {
+	-moz-transition: all 0.9s ease 0s;
+	-webkit-transition: all 0.9s ease 0s;
+	-o-transition: all 0.9s ease 0s;
+}
+@mixin box-shadow1{
+	-webkit-box-shadow: -3px 0px 7px 0px rgba(136, 136, 136, 0.3);
+	-moz-box-shadow: -3px 0px 7px 0px rgba(136, 136, 136, 0.3);
+	box-shadow: -3px 0px 7px 0px rgba(136, 136, 136, 0.3);
+}
+@mixin box-shadow2{
+	-webkit-box-shadow: inset 0px 0px 18px 0px rgba(50, 50, 50, 0.21);
+	-moz-box-shadow:    inset 0px 0px 18px 0px rgba(50, 50, 50, 0.21);
+	box-shadow:         inset 0px 0px 18px 0px rgba(50, 50, 50, 0.21);
+}
+
+$mr_t: 20px;

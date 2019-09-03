@@ -1,0 +1,47 @@
+/**
+ * Product Auction CSS Stylesheet
+ *
+ * @package templateSystem
+ * @copyright Copyright 2003-2007 Zen Cart Development Team
+ * @copyright Portions Copyright 2003 osCommerce
+ * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
+ * @version $Id: stylesheet_auction.css 0001 2009-04-04 06:18:46Z $
+ */
+
+.productAuction  {
+	text-align: center;
+	vertical-align: top;
+	padding: 1.2em;
+}
+.productGeneral {
+
+	vertical-align: top;
+	padding: 1.2em;
+}
+
+.AuctionBold {
+	font-weight: bold;
+	color: red;
+	font-size: 12px ;
+	}
+
+#productName {
+	color: #444443;
+	font-weight: bold;
+	}
+
+.countdown {
+    padding:5px;
+	background-image: url(../images/hbg.gif);
+	background-repeat: repeat-x;
+    color:#fff;
+	font-weight: bold;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+#popupAuctionHelp {
+	padding:5px;
+	background-color: #fff; 
+	background-image: none;
+	}

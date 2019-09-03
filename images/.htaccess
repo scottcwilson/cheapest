@@ -1,0 +1,187 @@
+# Begin IP blocking #
+Order Allow,Deny
+Deny from 1.126.104.185
+Deny from 1.24.0.0
+Deny from 1.24.0.13
+Deny from 1.80.0.0
+Deny from 101.132.133.18
+Deny from 103.7.79.125
+Deny from 109.124.237.142
+Deny from 109.234.160.27
+Deny from 112.91.89.14
+Deny from 113.161.87.220
+Deny from 113.66.104.199
+Deny from 113.67.225.27
+Deny from 115.159.157.104
+Deny from 117.96.230.160
+Deny from 118.67.248.120
+Deny from 119.28.17.48
+Deny from 119.28.78.252
+Deny from 119.81.71.27
+Deny from 120.198.224.105
+Deny from 120.239.66.243
+Deny from 121.147.42.186
+Deny from 123.17.147.57
+Deny from 123.17.255.255
+Deny from 123.206.217.106
+Deny from 129.232.200.208
+Deny from 134.249.48.151
+Deny from 137.74.115.67
+Deny from 139.217.192.151
+Deny from 139.217.192.25
+Deny from 139.217.193.233
+Deny from 139.217.194.218
+Deny from 139.217.195.109
+Deny from 139.217.195.212
+Deny from 139.217.196.164
+Deny from 139.217.196.171
+Deny from 139.217.196.67
+Deny from 139.217.196.97
+Deny from 139.217.197.14
+Deny from 139.217.198.0
+Deny from 139.217.198.01
+Deny from 139.217.198.02
+Deny from 139.217.198.03
+Deny from 139.217.198.04
+Deny from 139.217.198.05
+Deny from 139.217.198.06
+Deny from 139.217.198.10
+Deny from 139.217.198.11
+Deny from 139.217.198.12
+Deny from 139.217.198.13
+Deny from 139.217.198.14
+Deny from 139.217.198.15
+Deny from 139.217.198.150
+Deny from 139.217.198.155
+Deny from 139.217.198.16
+Deny from 139.217.198.17
+Deny from 139.217.198.18
+Deny from 139.217.198.19
+Deny from 139.217.198.20
+Deny from 139.217.198.21
+Deny from 139.217.198.22
+Deny from 139.217.198.23
+Deny from 139.217.198.24
+Deny from 139.217.198.25
+Deny from 139.217.198.26
+Deny from 139.217.199.152
+Deny from 139.217.199.48
+Deny from 139.219.12.26
+Deny from 139.219.14.251
+Deny from 139.219.5.200
+Deny from 139.219.8.119
+Deny from 139.219.8.161
+Deny from 139.219.9.205
+Deny from 139.219.9.55
+Deny from 14.187.162.172
+Deny from 145.255.21.91
+Deny from 148.251.178
+Deny from 148.251.178.242
+Deny from 149.56.8.227
+Deny from 151.1.48.3
+Deny from 185.210.218
+Deny from 153.92.8.52
+Deny from 93.84.231.148
+Deny from 176.31.126.56
+Deny from 176.61.242.45
+Deny from 176.8.88.12
+Deny from 178.159.37.93
+Deny from 178.172.147.240
+Deny from 178.47.88.41
+Deny from 178.62.127.255
+Deny from 178.62.243.180
+Deny from 178.62.99.175
+Deny from 180.76.15.140
+Deny from 180.76.15.30
+Deny from 182.50.132.48
+Deny from 185.142.26.163
+Deny from 185.210.218
+Deny from 185.210.218.104
+Deny from 188.163.72.17
+Deny from 188.165.234.52
+Deny from 92.9.132.250
+Deny from 93.37.177.10
+Deny from 93.81.33.209
+Deny from 94.101.82.210
+Deny from 94.103.9.79
+Deny from 94.180.76.177
+Deny from 94.50.0.202
+Deny from 94.73.148.164
+Deny from 94.73.148.53
+Deny from 94.73.151.180
+Deny from 95.175.65.192
+Deny from 95.216.19.45
+Deny from 91.242.162.20
+Deny from 46.118.155.222
+Deny from 84.54.36.137
+Deny from 114.115.130.198
+Deny from 113.111.81.85
+Deny from 109.234.157.58
+Deny from 187.191.113.218
+Deny from  95.168.209.195
+Deny from  103.200.20.239
+Deny from  155.133.138.66
+Deny from  91.134.248.211
+Deny from  194.31.169.30
+Deny from  35.232.214.242
+Deny from 51.15.214.154
+Deny from 51.15.46.11
+Deny from 51.15.46.174
+Deny from 51.15.52.84
+Deny from 52.220.140.248
+Deny from 52.80.158.135
+Deny from 52.80.181.23
+Deny from 52.80.187.230
+Deny from 52.80.191
+Deny from 52.80.195.94
+Deny from 52.80.200.190
+Deny from 52.80.220.93
+Deny from 52.80.242.75
+Deny from 52.80.245.149
+Deny from 52.81.1.19
+Deny from 52.81.10.16
+Deny from 52.83.110.47
+Deny from 52.83.191.29
+Deny from 52.83.219.14
+Deny from 52.83.225.163
+Deny from 52.83.254.182
+Deny from 54.222.155.73
+Deny from 54.222.200.201
+Deny from 197.242.144.39
+Allow from all
+# End IP blocking #
+
+
+
+
+#
+# @copyright Copyright 2003-2010 Zen Cart Development Team
+# @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
+# @version $Id: .htaccess 16111 2010-04-29 22:39:02Z drbyte $
+#
+# This is used with Apache WebServers
+#
+# The following blocks direct HTTP requests to all filetypes in this directory recursively, except certain approved exceptions
+# It also prevents the ability of any scripts to run. No type of script, be it PHP, PERL or whatever, can normally be executed if ExecCGI is disabled.
+# Will also prevent people from seeing what is in the dir. and any sub-directories
+#
+# For this to work, you must include either 'All' or at least: 'Limit' and 'Indexes' parameters to the AllowOverride configuration in your apache/conf/httpd.conf file.
+# Additionally, if you want the added protection offered by the OPTIONS directive below, you'll need to add 'Options' to the AllowOverride list, if 'All' is not specified. 
+# Example:
+#<Directory "/usr/local/apache/htdocs">
+#  AllowOverride Limit Options Indexes
+#</Directory>
+###############################
+# deny *everything*
+<FilesMatch ".*">
+  Order Allow,Deny
+  Deny from all
+</FilesMatch>
+# but now allow just *certain* necessary files:
+<FilesMatch ".*\.(jpe?g|JPE?G|gif|GIF|png|PNG|swf|SWF)$" >
+  Order Allow,Deny
+  Allow from all
+</FilesMatch>
+IndexIgnore */*
+## NOTE: If you want even greater security to prevent hackers from running scripts in this folder, uncomment the following line (if your hosting company will allow you to use OPTIONS):
+# OPTIONS -Indexes -ExecCGI

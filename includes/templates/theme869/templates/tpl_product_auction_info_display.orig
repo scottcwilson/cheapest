@@ -1,0 +1,288 @@
+<?php                                           
+/**
+ * Page Template
+ *
+ * Loaded automatically by index.php?main_page=product_info.<br />
+ * Displays details of a typical product
+ *
+ * @package templateSystem
+ * @copyright Copyright 2003-2006 Zen Cart Development Team
+ * @copyright Portions Copyright 2003 osCommerce
+ * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
+ * @version $Id: tpl_product_info_display.php 5369 2006-12-23 10:55:52Z drbyte $
+ * @version $Id: tpl_product_auction_info_display.php 290 2005-01-26 dave@open-operations.com
+ * @version $Id: tpl_product_auction_info_display.php 19 2010-12-20 10:30:40Z davewest $
+ */ 
+
+?>
+
+
+<?php
+session_start();
+$secret=md5(uniqid(rand(), true));
+$_SESSION['FORM_SECRET'] = $secret;
+?>
+
+
+<div class="centerColumn" id="productAuction">
+
+<!--bof Form start-->
+<?php echo zen_draw_form('cart_quantity', zen_href_link(zen_get_info_page($_GET['products_id']), zen_get_all_get_params(array('action')) . 'action=add_product&mod=auction'), 'post', 'enctype="multipart/form-data"'); ?>
+<!--eof Form start-->
+
+<?php if ($messageStack->size('place_bid') > 0) echo $messageStack->output('place_bid'); ?>
+
+
+<input type="hidden" name="form_secret" id="form_secret" value="<?php echo $_SESSION['FORM_SECRET'];?>" />
+
+
+<!--bof Category Icon -->
+<?php if ($module_show_categories != 0) {?>
+<?php
+/**
+ * display the category icons
+ */
+require($template->get_template_dir('/tpl_modules_category_icon_display.php',DIR_WS_TEMPLATE, $current_page_base,'templates'). '/tpl_modules_category_icon_display.php'); ?>
+<?php } ?>
+<!--eof Category Icon -->
+
+<!--bof Prev/Next top position -->
+<?php if (PRODUCT_INFO_PREVIOUS_NEXT == 1 or PRODUCT_INFO_PREVIOUS_NEXT == 3) { ?>
+<?php
+/**
+ * display the product previous/next helper
+ */
+require($template->get_template_dir('/tpl_products_next_previous.php',DIR_WS_TEMPLATE, $current_page_base,'templates'). '/tpl_products_next_previous.php'); ?>
+<?php } ?>
+<!--eof Prev/Next top position-->
+<div class="productGeneral  biggerText"><?php echo TEXT_AUCTION_TAG_LINE; ?></div>
+<div class="forward"><?php echo '<a href="javascript:popupWindow(\'' . zen_href_link(FILENAME_POPUP_AUCTION_HELP) . '\')">' . zen_image_button(BUTTON_IMAGE_AUCTION_HELP, BUTTON_AUCTION_HELP_ALT) . '</a>'; ?></div>  
+<!--bof Main Product Image -->
+<?php
+  if (zen_not_null($products_image)) {
+  ?>
+<?php
+/**
+ * display the main product image
+ */
+   require($template->get_template_dir('/tpl_modules_main_product_image.php',DIR_WS_TEMPLATE, $current_page_base,'templates'). '/tpl_modules_main_product_image.php'); ?>
+   <?php 
+  }
+?>
+<!--eof Main Product Image-->
+<!--bof Product Name-->
+<h1 id="productName" class="productGeneral "><?php echo $products_name; ?></h1>
+<!--eof Product Name-->
+<!-- bof winning bid thingy -->
+<?php if ($difference == '0') { ?> 
+
+<!--beginning of Product Display code-->
+<div class="productAuction AuctionBold"><?php echo AUCTION_BIDDING_OVER; ?></div>
+ <?php 
+ if ($products_reserve_price <= $auction_current_bid && $customer_high_bidder != 'x') {
+         if (AUCTION_INFO_DISPLAY_WIN_BID_NAME == '1') { ?>
+
+<div class="productAuction biggerText"><?php echo AUCTION_WINNER . '&nbsp;&nbsp;' . TEXT_AUCTION_BIDDER_ID . ':&nbsp;' . $last_bid->fields['customers_id']; ?></div>
+
+   <?php }
+         if (AUCTION_INFO_DISPLAY_WIN_BID_BID == '1') { ?>
+
+<div class="productAuction"><?php echo AUCTION_WIN_BID . '&nbsp;' . $auction_current_bid_with_currency; ?></div>
+
+   <?php }  
+         if ($customer_high_bidder == $_SESSION['customer_id']) { 
+          if (AUCTION_INFO_DISPLAY_PAY_NOW == 1) { 
+             $the_button = '<input type="hidden" name="cart_quantity" value="1" />' . zen_draw_hidden_field('price', $auction_current_bid) . zen_draw_hidden_field('products_id', (int)$_GET['products_id']) . zen_image_submit(BUTTON_IMAGE_AUCTION_PAY_NOW, BUTTON_AUCTION_PAY_NOW_ALT);
+             } else {
+             $the_button = USER_AUCTION_WINNER . '<br />' . WINNER_CHECKOUT;
+			 }  ?>
+<div class="productAuction biggerText"><?php echo $the_button;	?></div>
+   <?php } }  else if ($products_reserve_price > $auction_current_bid) {?>
+<div class="productAuction biggerText"><?php echo AUCTION_RESERVE; ?></div>
+<!-- eof winning bid thingy -->  
+<?php }} else { ?> 
+<!-- bof still open for biding! -->
+<!--beginning of Product Display code-->
+<!-- bof countdown--> 
+
+<div class="productAuction  biggerText" id="expire">
+<script type="text/javascript">window.onload = user_time();</script>
+
+
+<br /><br /> 
+
+<?php
+if (AUCTION_INFO_DISPLAY_PREVIOUS_BIDS_COUNT == '1')
+	if ($previous_bids->RecordCount() == 1) {
+		echo $previous_bids->RecordCount() . '&nbsp;' . AUCTION_BID;
+	} else {
+		echo $previous_bids->RecordCount() . '&nbsp;' . AUCTION_BIDS; 
+	} ?>
+<br /><br />
+
+<?php if ($auction_clock == 1 ) { //run the clock ?>
+<div class="countdown" id="remain">
+<?php echo '$remainingDay days, $remainingHour hours, $remainingMinutes minutes, $remainingSeconds seconds';?></div>
+
+<!--eof countdown -->
+<?php } ?>
+</div>
+<div class="productAuction AuctionBold">
+<?php if ($auction_start == 1) {
+
+if ($products_reserve_price > $auction_current_bid) { 
+//	echo '<font color="#000">'. RESERVE_FRONT_TEXT . $products_reserve_price_with_currency . RESERVE_BACK_TEXT . '</font><br /><br />';
+
+	$one_time = AUCTION_RESERVE_NOT_MET . '<br /><br />';
+		//echo 'me testing reserve';
+   if (AUCTION_INFO_DISPLAY_RESERVE_NOT_MET == '1') {
+//    echo $one_time;
+	echo '<font color="#FF0000">'. RESERVE_FRONT_TEXT . RESERVE_BACK_TEXT . '</font><br /><br />';
+
+	}
+}
+}
+
+	if ($previous_bids->RecordCount() > 0) {
+	echo CURRENT_BID_TEXT . $auction_current_bid_with_currency;
+		} else {
+	echo STARTING_BID_TEXT . $auction_current_bid_with_currency;
+	$bid_minimum_increase = 0;
+		}
+
+    ?>
+</div>
+
+<!--bof Product details list  -->
+    <div class="productAuction biggerText"><?php if ($customer_high_bidder == $_SESSION['customer_id']) { echo USER_CURRENT_HIGH_BIDDER; } ?></div>
+
+    <div class="productAuction  biggerText">
+    <?php echo ((SHOW_PRODUCT_AUCTION_INFO_MODEL == '1' & $products_model != '') ? TEXT_PRODUCT_MODEL . $products_model : '&nbsp;'); ?><br/>
+	<?php echo ((SHOW_PRODUCT_AUCTION_INFO_WEIGHT == '1' and $products_weight !=0) ? TEXT_PRODUCT_WEIGHT .  $products_weight . TEXT_PRODUCT_WEIGHT_UNIT : '&nbsp;'); ?><br/>
+    <?php echo ((SHOW_PRODUCT_AUCTION_INFO_QUANTITY == '1') ? $products_quantity . TEXT_PRODUCT_QUANTITY : '&nbsp;'); ?><br/><br/>
+
+<?php if ($previous_bids->RecordCount() > 0) {
+     echo '<b>'. AUCTION_MINIMUM_INCREASE . ' ' . $bid_currency_minimum_increase . '</b>';
+  }
+?>
+    </div>
+<!--eof Product details list -->
+
+
+    <div class="productAuction"><?php if (!$_SESSION['customer_id']) {  ?>
+	<?php $_SESSION['navigation']->set_snapshot(); echo '<a href="' . zen_href_link(FILENAME_LOGIN, '', 'SSL') . '">' . zen_image_button(BUTTON_IMAGE_AUCTION_LOG_IN, 'Sign In to Bid!') . '</a>';  ?>	   
+	<?php   } ?>
+	</div>
+<br class="clearBoth" />
+
+<?php
+if (CUSTOMERS_APPROVAL == '2' or TEXT_LOGIN_FOR_PRICE_BUTTON_REPLACE_SHOWROOM == '' or CUSTOMERS_APPROVAL == '3') {
+   //echo 'Login!!'; // Log in section do nothing
+} else {  
+//echo 'Not Logged In!!'; // not login section
+?>
+<?php
+if (($products_buynow_price > $auction_current_bid) && ($products_buynow_price > 0)) {
+  if (AUCTION_INFO_DISPLAY_BUY_NOW == '1') { ?>	  
+
+           <div class="productAuction biggerText"><?php echo BUY_NOW_PRICE; ?>&nbsp;&nbsp;<?php echo $currencies->display_price($products_buynow_price,
+                      zen_get_tax_rate($product_info->fields['products_tax_class_id'])); ?>&nbsp;
+             <?php echo ((SHOW_PRODUCT_INFO_IN_CART_QTY == '1' and $_SESSION['cart']->in_cart($_GET['products_id'])) ? PRODUCTS_ORDER_QTY_TEXT_IN_CART . $_SESSION['cart']->get_quantity($_GET['products_id']) : '&nbsp;'); ?>
+
+            <?php
+            if ($products_qty_box_status == '0' or $products_quantity_order_max== '1') {
+              // hide the quantity box and default to 1
+              $the_button = '<input type="hidden" name="cart_quantity" value="1" />' . zen_draw_hidden_field('price', $products_buynow_price) . zen_draw_hidden_field('products_id', (int)$_GET['products_id']) . zen_image_submit(BUTTON_IMAGE_AUCTION_BUY_NOW, BUTTON_AUCTION_BUY_NOW_ALT);
+            } else {
+              // show the quantity box
+              $the_button = PRODUCTS_QUANTITY_TO_BUY_NOW . '<input type="text" name="cart_quantity" value="' . (zen_get_buy_now_qty($_GET['products_id'])) . '" maxlength="6" size="4" /><br>' . zen_draw_hidden_field('price', $products_buynow_price) . zen_get_products_quantity_min_units_display((int)$_GET['products_id']) . zen_draw_hidden_field('products_id', (int)$_GET['products_id']) . zen_image_submit(BUTTON_IMAGE_AUCTION_BUY_NOW, BUTTON_AUCTION_BUY_NOW_ALT) . '<br/>';
+            }
+            echo zen_get_buy_now_button_auction($_GET['products_id'], $the_button);
+            ?>
+           </div>
+
+  <?php } } ?></form>
+ <!-- if customer is loged in, show this else not -->
+  <?php if ($_SESSION['customer_id']) { ?>
+  <?php echo zen_draw_form('place_bid', zen_href_link(zen_get_info_page($_GET['products_id']), zen_get_all_get_params(array('action')) . 'action=place_bid',$request_type), 'post', 'onsubmit="return SubmitOrderButton();"') . zen_draw_hidden_field('action', 'place_bid') . zen_draw_hidden_field('form_secret', $_SESSION['FORM_SECRET'], 'id="form_secret"'); ?>
+  <?php echo zen_draw_hidden_field('auction_price', $products_auction_price); ?>
+  <?php echo zen_draw_hidden_field('auction_current_bid', $auction_current_bid); ?>
+  <?php if ($customer_high_bidder != $_SESSION['customer_id']) { ?> 
+		
+	<div id="submitmain" align="center" class="productGeneral biggerText">
+		<?php echo CURRENT_BID . ' ';
+		if ($previous_bids->RecordCount() == 0) {
+			echo $auction_current_bid_with_currency . '<br/>';
+		} else {
+			$auction_minimum_bid = $auction_current_bid+$bid_minimum_increase;
+			$auction_minimum_bid_currency = $currencies->display_price($auction_minimum_bid);
+			echo $auction_minimum_bid_currency . '<br/>';
+		}
+	?>
+
+
+		<?php echo AUCTION_BID_AMOUNT; ?><br/>
+		  <?php echo zen_draw_input_field('auction_bid_amount', '', zen_set_field_length(TABLE_PRODUCTS_AUCTION, 'customers_bid', '30')); ?><br/>
+		  <?php echo zen_image_submit(BUTTON_IMAGE_SUBMIT_AUCTION_BID, BUTTON_SUBMIT_AUCTION_BID_ALT); ?></div>
+<div id="pleasewait" class="buttonRow forward" style="display:none"><?php echo zen_image(DIR_WS_TEMPLATE_IMAGES .'hammer.gif', 'Please Wait') . '<br /><strong>Please wait your bid is processing</strong>';?></div>
+  <?php }  ?>
+  <?php }  ?>
+<?php } // CUSTOMERS_APPROVAL == '3' ?>
+
+<br class="clearBoth" />
+<?php //if ($_SESSION['customer_id']) {
+if (AUCTION_INFO_DISPLAY_PREVIOUS_BIDS == '1') {
+ if ($auction_info->RecordCount() >0) {
+ ?>
+
+<div><b><?php echo AUCTION_PREVIOUS_BIDS; ?></b></div>
+
+    <?php  while (!$previous_bids->EOF) { ?>
+
+        <div><?php echo $currencies->display_price($previous_bids->fields['customers_bid'], zen_get_tax_rate($product_info->fields['products_tax_class_id'])); ?>&nbsp;-&nbsp;<?php echo TEXT_AUCTION_BIDDER_ID ?> &nbsp;&nbsp;<?php echo $previous_bids->fields['customers_id']; ?></div>
+
+    <?php $previous_bids->MoveNext(); } ?>
+
+<?php } } //} ?>
+<br/><br/>
+
+  <?php }  ?>
+ <!--bof Product description -->
+<?php if ($products_description != '') { ?>
+<div id="producdivescription" class="productGeneral  biggerText"><?php echo stripslashes($products_description); ?></div>
+<?php } ?>
+<!--eof Product description -->
+
+<br class="clearBoth" />
+<!--bof Additional Product Images -->
+<?php
+/**
+ * display the products additional images
+ */
+  require($template->get_template_dir('/tpl_modules_additional_images.php',DIR_WS_TEMPLATE, $current_page_base,'templates'). '/tpl_modules_additional_images.php'); ?>
+  <!--eof Additional Product Images -->
+
+<!--bof Reviews button and count-->
+<table width="100%" border="0" cellspacing="2" cellpadding="2">
+  <tr>
+<?php
+  if ($reviews->fields['count'] > 0 or SHOW_PRODUCT_AUCTION_INFO_REVIEWS == '1') {
+    // if more than 0 reviews, then show reviews button; otherwise, show the "write review" button
+    if ($reviews->fields['count'] > 0 ) { ?>
+<td id="productReviewLink"><?php echo '<a href="' . zen_href_link(FILENAME_PRODUCT_REVIEWS, zen_get_all_get_params()) . '">' . zen_image_button(BUTTON_IMAGE_REVIEWS, BUTTON_REVIEWS_ALT) . '</a>'; ?>
+<p align="left" class="reviewCount"><?php echo ($flag_show_product_info_reviews_count == 1 ? TEXT_CURRENT_REVIEWS . ' ' . $reviews->fields['count'] : ''); ?></p></td>
+<?php } else { ?>
+<td id="productReviewLink"><?php echo '<a href="' . zen_href_link(FILENAME_PRODUCT_REVIEWS_WRITE, zen_get_all_get_params(array())) . '">' . zen_image_button(BUTTON_IMAGE_WRITE_REVIEW, BUTTON_WRITE_REVIEW_ALT) . '</a>'; ?></td>
+
+<?php
+  }
+}
+?>
+<!--eof Reviews button and count -->
+<!-- Ask a question -->
+<td id="askQuestion">&nbsp;</td>
+
+  </tr>
+</table>
+
+

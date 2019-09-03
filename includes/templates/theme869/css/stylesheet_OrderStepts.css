@@ -1,0 +1,39 @@
+
+/* This is the CSS needed for the Order Step Responsive contribution */
+
+/* content configurations. */
+.ui-grid-d { overflow: hidden; }
+.ui-block-a, .ui-block-b, .ui-block-c, .ui-block-d, .ui-block-e, .ui-block-f { margin: 0; padding: 0; border: 0; float: left; min-height: 1px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; }
+
+/*grid 25% 25/25/25/25 */
+.ui-grid-d .ui-block-a, .ui-grid-d .ui-block-b, .ui-grid-d .ui-block-c, .ui-grid-d .ui-block-d, .ui-grid-d .ui-block-e, .ui-grid-d .ui-block-f { width: 24.925%; }
+.ui-grid-b > :nth-child(n) { width: 24%;text-align:center; }
+
+.ui-grid-d .ui-block-a, .ui-grid-a .ui-block-aa { clear: left; }
+
+
+/* preset breakpoint to switch to stacked grid styles below 35em (560px) */
+@media all and (max-width: 35em) {
+	.ui-responsive .ui-block-a, 
+	.ui-responsive .ui-block-b, 
+	.ui-responsive .ui-block-c,
+	.ui-responsive .ui-block-d,
+	.ui-responsive .ui-block-e,
+	.ui-responsive .ui-block-f{ 
+		width: 100%; 
+		float:none; 
+	}
+}
+
+
+/* Is needed for the centering in IE */
+#order_steps {padding: 0 3px;margin: 10px 10px;text-align: center;}
+
+/* These are the styles for the non-active text */
+.order_steps_text {color: #A7A7A7; font-weight: 700;font-size: 1.1em; width:25%;}
+
+/* These are the styles for the active text */
+.active_step_text {color: #005C2C;font-weight: 700;font-size: 1.1em;width:25%;}
+
+
+/* End Order Steps contribution CSS */

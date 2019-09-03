@@ -1,0 +1,20 @@
+
+.detail-summary {
+    display:none;
+}
+#sideboxTrackingInformation{
+    position: window;
+    background: white;
+    border: 1px solid black;
+}
+#currentStatus{  margin: 25px;
+                 font-size: 25px;
+                 text-transform: uppercase;
+}
+#uspsSideboxTrackingClose{
+    float: right;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    color: blue;
+}

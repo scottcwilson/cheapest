@@ -1,0 +1,167 @@
+<br>
+<hr/>
+
+
+
+<center>
+<!-- Forex Rates Ticker Script - EXCHANGERATEWIDGET.COM -->
+<div style="margin:0 auto;background-color:#19CAAF;width:755px;height:32px;line-height:26px;border:3px solid #9B9B9B;border-radius:5px;color:#000000;"><script type="text/javascript" src="//www.exchangeratewidget.com/converter.php?l=en&f=USD&t=USDAED,USDAUD,USDBHD,USDCNY,USDEGP,USDEUR,USDFJD,USDGBP,USDHKD,USDIDR,USDINR,USDJPY,USDKRW,USDKWD,USDMAD,USDMVR,USDRUB,USDTHB,USDVND,USDYER,USDZAR,&a=1&d=19CAAF&n=FFFFFF&o=000000&v=11"></script></div>
+<!-- End of Exchange Rates Script -->
+<br>
+
+
+
+<marquee>
+<ul class="list-inline"> 
+<li><span class="type"><span style="color:#000000;">Gold:</span>&nbsp;&nbsp;<span class="price">$1,223.40&nbsp;&nbsp;</span><span style="color:#009300;"><span class="change pos"></span><i class="fa fa-caret-up" aria-hidden="true"></i>&nbsp;&nbsp;$+16.41</span></li>
+&nbsp;&nbsp;
+
+<li><span class="type"><span style="color:#000000;">Silver:</span>&nbsp;&nbsp;<span class="price">$14.26&nbsp;&nbsp;</span><span style="color:#009300;"><span class="change pos"></span><i class="fa fa-caret-up" aria-hidden="true"></i>&nbsp;&nbsp;$+0.10</span></li>
+&nbsp;&nbsp;
+
+<li><span class="type"><span style="color:#000000;">Platinum:</span>&nbsp;&nbsp;<span class="price">$843.10&nbsp;&nbsp;</span><span style="color:#ff0000;"><span class="change neg"></span><i class="fa fa-caret-down" aria-hidden="true"></i>&nbsp;&nbsp;$-5.90</span></li>
+&nbsp;&nbsp;
+
+<li><span class="type"><span style="color:#000000;">Copper:</span>&nbsp;&nbsp;<span class="price">$2.75&nbsp;&nbsp;</span><span style="color:#009300;"><span class="change pos"></span><i class="fa fa-caret-up" aria-hidden="true"></i>&nbsp;&nbsp;+$0.07</span></li>
+&nbsp;&nbsp;
+
+
+<li><span class="type"><span style="color:#000000;">US Dollar ($):</span>&nbsp;&nbsp;<span class="price">$96.96&nbsp;&nbsp;</span><span style="color:#009300;"><span class="change pos"></span><i class="fa fa-caret-up" aria-hidden="true"></i>&nbsp;&nbsp;+$0.01</span></li>
+&nbsp;&nbsp;
+
+
+<li><span class="type"><span style="color:#000000;">Bitcoin (BTC):</span>&nbsp;&nbsp;<span class="price">$3,820.00&nbsp;&nbsp;</span><span style="color:#ff0000;"><span class="change neg"></span><i class="fa fa-caret-down" aria-hidden="true"></i>&nbsp;&nbsp;-$2.481.01</span></li>
+&nbsp;&nbsp;
+
+<li><span class="type"><span style="color:#000000;">Bitcoin Cash (BCH):</span>&nbsp;&nbsp;<span class="price">$xxx.xx&nbsp;&nbsp;</span><span style="color:#ff0000;"><span class="change neg"></span><i class="fa fa-caret-down" aria-hidden="true"></i>&nbsp;&nbsp;-$xx.xx</span></li>
+&nbsp;&nbsp;
+
+<li><span class="type"><span style="color:#000000;">Ethereum (ETH):</span>&nbsp;&nbsp;<span class="price">$108.13&nbsp;&nbsp;</span><span style="color:#ff0000;"><span class="change neg"></span><i class="fa fa-caret-down" aria-hidden="true"></i>&nbsp;&nbsp;-$98.90</span></li>
+&nbsp;&nbsp;
+
+<li><span class="type"><span style="color:#000000;">ZeroCoin (RX):</span>&nbsp;&nbsp;<span class="price">$0.36&nbsp;&nbsp;</span><span style="color:#ff0000;"><span class="change neg"></span><i class="fa fa-caret-down" aria-hidden="true"></i>&nbsp;&nbsp;-$0.31</span></li>
+&nbsp;&nbsp;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<i>BanknotePros.com Price Watch Ticker - Prices update once/day</i>
+</ul>
+</marquee>
+<br>
+<hr/>
+<br><br>
+
+
+<a href="http://cheapestdinar.com/index.php?main_page=page&id=33"><img alt="best prices on Zimbabwe currency" src="http://kmcintyre.startlogic.com/images/20_Off_Red_4.jpg" style="border-style:solid; border-width:0pt; float:left; height:265px; margin-left:10px; margin-right:10px; width:328px" /></a>
+
+
+<span style="font-size:16px"><b>Welcome To Cheapest Dinar&#8482; &nbsp; & &nbsp;Banknote Pros&#8482;</b></span>
+<br>
+&euro; &dollar; &nbsp; <b>Home Of The FREE Sample Banknotes!</b> &nbsp; &euro; &dollar;<br>
+<span style="font-size:12px"><i>Website last updated March 3rd, 2019</i> </span>
+<br><br>
+
+
+The name is <i>Cheapest Dinar</i>, but we are the Banknote Pros!&nbsp; As a Member of the Banknote Pros Team, one of the many perks you will enjoy, is receiving a FREE sample of randomly selected foreign Banknotes and/or genuine precious metals with each and every purchase.&nbsp; Though some prices may be slightly more than our competitors, customer service often matters more than price, and our value can be found within our exceptional customer service.&nbsp; Though no one can afford to be the best and cheapest, we sure try!...&nbsp; You will love our friendly, personable service.&nbsp; <b>We are a Members ONLY team, but membership is 100% <span style="color:#19caaf">FREE!</span></b><br> You must have an approved membership to view prices and make purchases.
+<br><br>
+<br>
+
+
+<span style="color:#19caaf"><span style="font-size:16px">
+<b>Want To Become A Member?</b></span></span>&nbsp;&nbsp; <span style="font-size:14px"><i>Be Sure To Carefully Read This Page --></i></b></span>&nbsp;&nbsp; <a href="http://www.cheapestdinar.com/index.php?main_page=page&amp;id=34"><img alt="" height="120" src="http://kmcintyre.startlogic.com/images/Become_a_member.png" width="120" /></a><br><br><br>
+
+
+
+Iraqi Dinar &#8226; Vietnam Dong &#8226; Zimbabwe Dollar &#8226; Chinese Yuan &#8226; Japanese Yen<br>India Rupee &#8226; Russian Ruble &#8226; Iranian Rial &#8226; Afghanistan Afghani &#8226; Emirate Dirham<br>Indonesian Rupiah &#8226; Iranian Rial &#8226; Maldives Rufiyaa &#8226; Korean Won &#8226; Syrian Pound<br>Silver Certificates &#8226; Gold Certificates &#8226; Large US Banknotes &#8226; Star Notes &#8226; Error Notes<br>24K Gold bars &#8226; Silver bars &#8226; Diamonds &#8226; Bitcoin &#8226; Crypto Currencies &#8226; Novelties<br><br><br>
+
+
+<img alt="2008 AA Zimbabwe 100 Trillions" src="http://kmcintyre.startlogic.com/images/Satisfaction_Green_Circle.jpg" style="border-style:solid; border-width:0pt; float:right; height:190px; margin-left:10px; margin-right:95px; width:255px" /> </a>
+
+<span style="font-size:16px"><span style="color:#dd1010">
+<img alt="" height="15" src="http://cheapestdinar.com/images/Clipart_Checkmark_Green_1.jpeg" width="16" />&nbsp;&nbsp; <b>Guaranteed 100% Authentic Banknotes<br><br>
+<img alt="" height="15" src="http://cheapestdinar.com/images/Clipart_Checkmark_Green_1.jpeg" width="16" />&nbsp;&nbsp; Certificates of Authenticity With Every Purchase!<br><br>
+<img alt="" height="15" src="http://cheapestdinar.com/images/Clipart_Checkmark_Green_1.jpeg" width="16" />&nbsp;&nbsp; Security Feature Authentication & Validation!<br><br>
+<img alt="" height="15" src="http://cheapestdinar.com/images/Clipart_Checkmark_Green_1.jpeg" width="16" />&nbsp;&nbsp; Fast, Secure & Discrete Shipping Couriers!</b></b></b></span></span>
+<br><br><br><br>
+
+<b><span style="color:#19caaf"><span style="font-size:18px">All Banknotes Come With A Genuine Certificate Of Authenticity!<br> 
+<span style="font-size:16px">Guaranteed Authentic, Or We'll Buy it Back!</span></span></span>
+<br><br>
+
+What More Could You Ask For?</b>
+<br><br><br>
+</span></span>
+<br>
+
+
+<center>
+<img alt="" src="https://www.unomaha.edu/news/2013/12/media/maintenance-h.jpg" style="width: 550px; height: 160px;" />
+<br><br>
+<span style="color:#ff0000"><b>** SCHEDULED DOWN-TIME MAINTENANCE IS COMING **</b><br>
+Down Time Is Scheduled For July 12th 6pm EST - July 15/16th</span><br><br>
+
+As You May Already Be Aware, We Are Once Again Unfortunately Experiencing Email Problems<br> 
+As A Result, We Are Currently Unable To Receive Your Emails At This Time<br>
+To Combat This Issue, We Are Moving The Website To A Different Hosting Company<br> 
+If You Visit And See That The Site Is Down For Maintenance, Please Do <b>NOT</b> Be Alarmed!<br>  This IS Scheduled Down-time, Which Could Last As Long As 2 to 3 Business Days.<br><br>
+You Will Be Unable To Place Orders Or Login To Your Account During This Time<br> 
+Likewise, We Will Be Unable To Login As Well.&nbsp; This Is Completely Normal.
+
+<center>
+<br><br>
+<br><br>
+<br>
+
+
+
+
+
+<center>
+<img alt="" height="700" src="http://kmcintyre.startlogic.com/images/Rupee_INR_Banknote_Fan.png" width="500" />
+<br><br>
+<span style="color:#ff0000"><b>** We Proudly Announce The Return Of The India Rupee **</span></b>
+<br><br>
+
+After much consideration, inventory count and many paper-cuts, we have decided to bring back the India Rupee.&nbsp; As you have noticed, we are currently updating our banknote listing information across all categories.&nbsp; After the updates are completed, we will make the India Rupee available for immediate purchase!&nbsp; <b>BUT THERE'S MORE!...</b>&nbsp; We are currently working with our vendors to get the new style Rupee banknotes in stock.&nbsp; Once we receive them, we will be adding the new INR banknotes to our online inventory as well.&nbsp; If you are interested in purchasing the India Rupee banknotes, be sure to check back often so you don't miss the INR banknote debut!
+</center>
+<br><br>
+<br><br>
+
+
+
+<center>
+<span style="color:#ff0000">
+<b>*** SPECIAL OFFER ***</b>
+</span>
+</center>
+<br>
+
+<center>
+<b>We Are Interested In A Buy-Back Of These Bars!</b><br><br>
+<img alt="" height="500" src="http://kmcintyre.startlogic.com/images/Gold_1Gram_BvB_B.jpg" width="300" />
+<br><br>
+
+
+<center>
+<span style="color:#ff0000">
+<b>*** SPECIAL OFFER ***</b>
+</span>
+</center>
+
+We have recently issued some of these bars as Free Gifts to our members.&nbsp; We are interested in offering a Buy-Back of these specific style of Gold bars.&nbsp; There is nothing wrong with these bars, we simply want to buy some back to complete a personal collection.<br><br>
+
+If you received one or more of this style of bar and would be interested in selling it back to us, please contact us to discuss details.&nbsp;  These bars are valued at $55 / each, and we would be willing to offer a direct payment, or store credit to use on any item of your choosing.&nbsp;  We are in need of 4 Bars in total, no more.&nbsp;  So if you have any of them, contact us quickly before orders are filled!
+<br><br>
+<br><br>
+
+</center>
+<br><br><br>
+
+
+
+
+<p><img alt="Flag Counter" src="http://s05.flagcounter.com/count2/pGn8/bg_FFFFFF/txt_000000/border_CCCCCC/columns_8/maxflags_56/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" /></p>
+
+<br>
+<br>
+<br>
+<br>
