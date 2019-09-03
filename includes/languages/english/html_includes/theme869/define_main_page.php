@@ -87,80 +87,41 @@ Iraqi Dinar &#8226; Vietnam Dong &#8226; Zimbabwe Dollar &#8226; Chinese Yuan &#
 <span style="font-size:16px">Guaranteed Authentic, Or We'll Buy it Back!</span></span></span>
 <br><br>
 
-What More Could You Ask For?</b>
+<span style="font-size:14px">What More Could You Ask For?</span></b>
 <br><br><br>
 </span></span>
 <br>
 
 
-<center>
-<img alt="" src="https://www.unomaha.edu/news/2013/12/media/maintenance-h.jpg" style="width: 550px; height: 160px;" />
-<br><br>
-<span style="color:#ff0000"><b>** SCHEDULED DOWN-TIME MAINTENANCE IS COMING **</b><br>
-Down Time Is Scheduled For July 12th 6pm EST - July 15/16th</span><br><br>
-
-As You May Already Be Aware, We Are Once Again Unfortunately Experiencing Email Problems<br> 
-As A Result, We Are Currently Unable To Receive Your Emails At This Time<br>
-To Combat This Issue, We Are Moving The Website To A Different Hosting Company<br> 
-If You Visit And See That The Site Is Down For Maintenance, Please Do <b>NOT</b> Be Alarmed!<br>  This IS Scheduled Down-time, Which Could Last As Long As 2 to 3 Business Days.<br><br>
-You Will Be Unable To Place Orders Or Login To Your Account During This Time<br> 
-Likewise, We Will Be Unable To Login As Well.&nbsp; This Is Completely Normal.
 
 <center>
-<br><br>
-<br><br>
+<img alt="" src="http://www.clker.com/cliparts/a/a/6/a/13128387631183937920labor_day_sale_-hi.png" style="height: 200px; width: 525px;" />
+<br>
+<span style="color:#0000ff"><span style="font-size:24px">
+<b>** Labor Day Weekend Sale ** </span></span><br>
+
+<span style="color:#ff0000"><span style="font-size:18px">
+<b>*</b> Up To 40% Off Selected Layaway Svcs!<br> 
+<b>*</b> Special Discounts On Select Banknotes!</span></span><br>
+
+<span style="color:#0000ff"><span style="font-size:16px">
+A Different Discount Offered In Each Layaway Category </span></span><br>
+
+<span style="color:#ff0000"><span style="font-size:16px">
+Sale Ends Tuesday Sept 3rd, 11:59pm EST</span></span><br>
+<span style="font-size:13px">*<i>All standard Sale rules & policies apply</i></span></b>
 <br>
 
-
-
-
-
-<center>
-<img alt="" height="700" src="http://kmcintyre.startlogic.com/images/Rupee_INR_Banknote_Fan.png" width="500" />
-<br><br>
-<span style="color:#ff0000"><b>** We Proudly Announce The Return Of The India Rupee **</span></b>
-<br><br>
-
-After much consideration, inventory count and many paper-cuts, we have decided to bring back the India Rupee.&nbsp; As you have noticed, we are currently updating our banknote listing information across all categories.&nbsp; After the updates are completed, we will make the India Rupee available for immediate purchase!&nbsp; <b>BUT THERE'S MORE!...</b>&nbsp; We are currently working with our vendors to get the new style Rupee banknotes in stock.&nbsp; Once we receive them, we will be adding the new INR banknotes to our online inventory as well.&nbsp; If you are interested in purchasing the India Rupee banknotes, be sure to check back often so you don't miss the INR banknote debut!
 </center>
+
 <br><br>
 <br><br>
-
-
-
-<center>
-<span style="color:#ff0000">
-<b>*** SPECIAL OFFER ***</b>
-</span>
-</center>
-<br>
-
-<center>
-<b>We Are Interested In A Buy-Back Of These Bars!</b><br><br>
-<img alt="" height="500" src="http://kmcintyre.startlogic.com/images/Gold_1Gram_BvB_B.jpg" width="300" />
 <br><br>
 
 
 <center>
-<span style="color:#ff0000">
-<b>*** SPECIAL OFFER ***</b>
-</span>
-</center>
-
-We have recently issued some of these bars as Free Gifts to our members.&nbsp; We are interested in offering a Buy-Back of these specific style of Gold bars.&nbsp; There is nothing wrong with these bars, we simply want to buy some back to complete a personal collection.<br><br>
-
-If you received one or more of this style of bar and would be interested in selling it back to us, please contact us to discuss details.&nbsp;  These bars are valued at $55 / each, and we would be willing to offer a direct payment, or store credit to use on any item of your choosing.&nbsp;  We are in need of 4 Bars in total, no more.&nbsp;  So if you have any of them, contact us quickly before orders are filled!
-<br><br>
-<br><br>
-
-</center>
-<br><br><br>
-
-
-
-
 <p><img alt="Flag Counter" src="http://s05.flagcounter.com/count2/pGn8/bg_FFFFFF/txt_000000/border_CCCCCC/columns_8/maxflags_56/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" /></p>
-
+</center>
 <br>
 <br>
 <br>

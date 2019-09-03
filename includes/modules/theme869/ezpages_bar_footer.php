@@ -19,7 +19,7 @@ if (EZPAGES_STATUS_FOOTER == '1' or (EZPAGES_STATUS_FOOTER == '2' and (strstr(EX
   if (isset($var_linksList)) {
     unset($var_linksList);
   }
-  $page_query = $db->Execute("select * from " . TABLE_EZPAGES . " where status_footer = 1 and footer_sort_order > 0 order by footer_sort_order, pages_title");
+  $page_query = $db->Execute("select * from " . TABLE_EZPAGES . " e, " . TABLE_EZPAGES_CONTENT . " ec WHERE e.pages_id = ec.pages_id AND status_footer = 1 and footer_sort_order > 0 order by footer_sort_order, pages_title");
   if ($page_query->RecordCount()>0) {
     $rows = 0;
     while (!$page_query->EOF) {

@@ -1,0 +1,19 @@
+/**
+ * Ceon Manual Card CSS Stylesheet.
+ *
+ * @package     ceon_manual_card
+ * @author      Conor Kerr <zen-cart.ceon-manual-card@ceon.net>
+ * @copyright   Copyright 2006-2012 Ceon
+ * @link        http://ceon.net/software/business/zen-cart/ceon-manual-card
+ * @version     $Id: stylesheet_ceon_manual_card.css 1036 2012-07-29 11:28:33Z conor $
+ */
+
+.CeonManualCardFormGadgetError { background: #ff6633; }
+.CeonManualCardCardIcon { margin-right: 4px; margin-bottom: 4px; }
+label.inputLabelPayment { margin-bottom: 0.5em; }
+
+.CeonManualCardCardsAcceptedSideboxCardIcon { margin-left: 4px; margin-bottom: 4px; }
+.CeonManualCardCardsAcceptedSidebox3DSecureIcon { margin-left: 4px; margin-bottom: 4px; }
+.CeonManualCardCardsAcceptedSidebox div { clear: left; }
+#ceon-manual-card-cards-accepted-sidebox-powered-by-ceon { margin-top: 4px; }
+#ceon-manual-card-cards-accepted-sidebox-powered-by-ceon img { border: none; }

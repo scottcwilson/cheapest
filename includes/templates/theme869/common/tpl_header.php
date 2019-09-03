@@ -82,7 +82,7 @@ if (!isset($flag_disable_header) || !$flag_disable_header) {
                             </div><?php ?>
                         	<div id="currencies-block-top" class="top_dropdown_menu">
                                 <!-- ========== CURRENCIES ========= -->
-                                <form name="currencies" id="currencies_form" action="<?php echo zen_href_link(basename(ereg_replace('.php','', $PHP_SELF)), '', $request_type, false) ?>" method="get" >
+                                <form name="currencies" id="currencies_form" action="<?php echo zen_href_link(basename(str_replace('.php','', $PHP_SELF)), '', $request_type, false) ?>" method="get" >
                                     <input type="hidden" name="currency" id="currency_value" value="" />
                                     <?php
                                         if (isset($currencies) && is_object($currencies)) 
