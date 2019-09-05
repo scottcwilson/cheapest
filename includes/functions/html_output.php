@@ -211,7 +211,7 @@ function zen_catalog_href_link($page = '', $parameters = '', $connection = 'NONS
 
 // alt is added to the img tag even if it is null to prevent browsers from outputting
 // the image filename as default
-    $image = '<img src="' . zen_output_string($src) . '" alt="' . zen_output_string($alt) . '"';
+    $image = '<img src="' . zen_output_string($src) . '" class="img-responsive" alt="' . zen_output_string($alt) . '"';
 
     if (zen_not_null($alt)) {
       $image .= ' title=" ' . zen_output_string($alt) . ' "';

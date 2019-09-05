@@ -22,7 +22,10 @@
 <?php
   if ($_SESSION['cart']->count_contents() > 0) {
 ?>
+<!--
 <div class="help-cart"><?php echo TEXT_VISITORS_CART; ?></div>
+  <br class="clearBoth" />
+-->
 <?php
   }
 ?>

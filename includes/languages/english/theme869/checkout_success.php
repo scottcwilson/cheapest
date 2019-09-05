@@ -26,7 +26,7 @@ define('FOOTER_DOWNLOAD', 'You can also download your products at a later time a
 define('TEXT_YOUR_ORDER_NUMBER', '<strong>Your Order Number is:</strong> ');
 
 define('TEXT_CHECKOUT_LOGOFF_GUEST', 'NOTE: To complete your order, a temporary account was created. You may close this account by clicking Log Off. Clicking Log Off also ensures that your receipt and purchase information is not visible to the next person using this computer. If you wish to continue shopping, feel free! You may log off at anytime using the link at the top of the page.');
-define('TEXT_CHECKOUT_LOGOFF_CUSTOMER', 'Thank you for shopping with us!  If you are finished shopping, be sure to logoff so that your financial information remains private!')
+define('TEXT_CHECKOUT_LOGOFF_CUSTOMER', 'Thank you for shopping with us!  If you are finished shopping, be sure to logoff so that your financial information remains private!');
 
 
 define('HEADING_ORDER_NUMBER', 'Order #%s');

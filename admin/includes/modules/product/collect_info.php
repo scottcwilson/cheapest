@@ -16,6 +16,8 @@ $parameters = array(
   'products_id' => '',
   'products_quantity' => '0',
   'products_model' => '',
+  'products_youtube' => '',
+  'products_family' => '',
   'products_image' => '',
   'products_price' => '0.0000',
   'products_virtual' => DEFAULT_PRODUCT_PRODUCTS_VIRTUAL,
@@ -47,6 +49,7 @@ $pInfo = new objectInfo($parameters);
 if (isset($_GET['pID']) && empty($_POST)) {
   $product = $db->Execute("SELECT pd.products_name, pd.products_description, pd.products_url,
                                   p.products_id, p.products_quantity, p.products_model,
+                                  p.products_youtube, p.products_family, 
                                   p.products_image, p.products_price, p.products_virtual, p.products_weight,
                                   p.products_date_added, p.products_last_modified,
                                   date_format(p.products_date_available, '%Y-%m-%d') as
@@ -385,6 +388,18 @@ for ($i = 0, $n = sizeof($tax_class_array); $i < $n; $i++) {
       <?php echo zen_draw_label(TEXT_PRODUCTS_MODEL, 'products_model', 'class="col-sm-3 control-label"'); ?>
     <div class="col-sm-9 col-md-6">
         <?php echo zen_draw_input_field('products_model', htmlspecialchars(stripslashes($pInfo->products_model), ENT_COMPAT, CHARSET, TRUE), zen_set_field_length(TABLE_PRODUCTS, 'products_model') . ' class="form-control"'); ?>
+    </div>
+  </div>
+  <div class="form-group">
+      <?php echo zen_draw_label(TEXT_PRODUCTS_YOUTUBE, 'products_youtube', 'class="col-sm-3 control-label"'); ?>
+    <div class="col-sm-9 col-md-6">
+        <?php echo zen_draw_input_field('products_youtube', htmlspecialchars(stripslashes($pInfo->products_youtube), ENT_COMPAT, CHARSET, TRUE), zen_set_field_length(TABLE_PRODUCTS, 'products_youtube') . ' class="form-control"'); ?>
+    </div>
+  </div>
+  <div class="form-group">
+      <?php echo zen_draw_label(TEXT_PRODUCTS_FAMILY, 'products_family', 'class="col-sm-3 control-label"'); ?>
+    <div class="col-sm-9 col-md-6">
+        <?php echo zen_draw_input_field('products_family', htmlspecialchars(stripslashes($pInfo->products_family), ENT_COMPAT, CHARSET, TRUE), zen_set_field_length(TABLE_PRODUCTS, 'products_family') . ' class="form-control"'); ?>
     </div>
   </div>
   <?php

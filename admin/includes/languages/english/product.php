@@ -85,3 +85,4 @@ define('TEXT_META_EXCLUDED', '<span class="alert">EXCLUDED</span>');
 define('TEXT_TITLE_PLUS_TAGLINE', 'Store Title+Tagline'); // this refers to whatever rules the storeowner has built into customizing their catalog /includes/modules/meta_tags.php and its lang file.
 
 define('TEXT_PRODUCTS_PRICE_INFO', 'Price:');
+define('TEXT_PRODUCTS_YOUTUBE', 'YouTube Code:');

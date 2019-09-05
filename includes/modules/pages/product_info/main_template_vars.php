@@ -39,6 +39,7 @@
     $sql = "select p.products_id, pd.products_name,
                   pd.products_description, p.products_model,
                   p.products_quantity, p.products_image,
+                  p.products_youtube, 
                   pd.products_url, p.products_price,
                   p.products_tax_class_id, p.products_date_added,
                   p.products_date_available, p.manufacturers_id, p.products_quantity,
@@ -101,6 +102,7 @@
   }
 
   $products_url = $product_info->fields['products_url'];
+  $products_youtube = $product_info->fields['products_youtube'];
   $products_date_available = $product_info->fields['products_date_available'];
   $products_date_added = $product_info->fields['products_date_added'];
   $products_manufacturer = $manufacturers_name;
@@ -158,6 +160,7 @@
 // build show flags from product type layout settings
   $flag_show_product_info_starting_at = zen_get_show_product_switch($_GET['products_id'], 'starting_at');
   $flag_show_product_info_model = zen_get_show_product_switch($_GET['products_id'], 'model');
+  $flag_show_product_info_youtube = zen_get_show_product_switch($_GET['products_id'], 'youtube');
   $flag_show_product_info_weight = zen_get_show_product_switch($_GET['products_id'], 'weight');
   $flag_show_product_info_quantity = zen_get_show_product_switch($_GET['products_id'], 'quantity');
   $flag_show_product_info_manufacturer = zen_get_show_product_switch($_GET['products_id'], 'manufacturer');

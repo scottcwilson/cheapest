@@ -383,8 +383,8 @@ define('FOOTER_TEXT_BODY', 'Copyright &copy; ' . date('Y') . ' <a href="' . zen_
   define('TEXT_SHIPPING_BOXES', 'Boxes');
 
 // Discount Savings
-  define('PRODUCT_PRICE_DISCOUNT_PREFIX','Save:&nbsp;');
-  define('PRODUCT_PRICE_DISCOUNT_PERCENTAGE','% off');
+  define('PRODUCT_PRICE_DISCOUNT_PREFIX',' -');
+  define('PRODUCT_PRICE_DISCOUNT_PERCENTAGE','% ');
   define('PRODUCT_PRICE_DISCOUNT_AMOUNT','&nbsp;off');
 
 // Sale Maker Sale Price
@@ -604,9 +604,8 @@ define('TEXT_ADMIN_DOWN_FOR_MAINTENANCE', '<b>NOTICE:</b>&nbsp; The website is c
   define('TABLE_HEADING_PRIVACY_CONDITIONS', '<br><font size="4">Conditions Of Use & Terms Of Service</font>');
   define('TEXT_PRIVACY_CONDITIONS_DESCRIPTION', '<font size="2">Before we can approve you as a Member, please acknowledge that you have read and agree to be legally bound by our  "Conditions Of Use", &nbsp; and  "Terms Of Service" policies,&nbsp; as well as our Membership Agreement by checking the following box below.&nbsp;&nbsp; If you have not yet read these policy agreements, they can be read by &nbsp; <a href="' . zen_href_link(FILENAME_CONDITIONS, '', 'SSL') . '"><span class="pseudolink"><span style="color:#0000FF;"><b>Clicking Here</b></span></span></a></font>.<br><br>');
   define('TEXT_PRIVACY_CONDITIONS_CONFIRM', '<b>Check this box,</b> To signify You have read and agree to be legally bound by our posted policies and Membership Agreement.</b>');
-  define('TABLE_HEADING_ADDRESS_DETAILS', '<br><br><font size="4">Your Contact / Billing Information:</font><br> <font size="2"><span style="color:#F90E0E;"><b>IMPORTANT NOTICE:</b></span>&nbsp;&nbsp;  DO NOT USE ALL CAPS WHEN CREATING YOUR ACCOUNT. &nbsp; Your account will be declined if using all CAPS.</b></font>')
-  define('TABLE_HEADING_PHONE_FAX_DETAILS', '<br><br><font size="4">Please Enter Your Phone Number</font></b><br>
-  <font size="3"><span style="color:#F90E0E;"><b>Do <u>NOT</u> Use Formats:</b></span>&nbsp;  (877), &nbsp; or&nbsp; 8777801083.<br></font>');
+  define('TABLE_HEADING_ADDRESS_DETAILS', '<br><br><font size="4">Your Contact / Billing Information:</font><br> <font size="2"><span style="color:#F90E0E;"><b>IMPORTANT NOTICE:</b></span>&nbsp;&nbsp;  DO NOT USE ALL CAPS WHEN CREATING YOUR ACCOUNT. &nbsp; Your account will be declined if using all CAPS.</b></font>');
+  define('TABLE_HEADING_PHONE_FAX_DETAILS', '<br><br><font size="4">Please Enter Your Phone Number</font></b><br><font size="3"><span style="color:#F90E0E;"><b>Do <u>NOT</u> Use Formats:</b></span>&nbsp;  (877), &nbsp; or&nbsp; 8777801083.<br></font>');
   define('TABLE_HEADING_DATE_OF_BIRTH', '<br><br><font size="4">Enter Date of Birth For I.D. Verification</font>');
   define('TABLE_HEADING_LOGIN_DETAILS', '<br><br><font size="4">Account Login Details:</font><br><span style="color:#FF0000;"><font size="3">  We do <u>NOT</u> accept Hotmail, AOL, or Yahoo!</font></span>');
   define('TABLE_HEADING_REFERRAL_DETAILS', 'Were You Referred to Us?');

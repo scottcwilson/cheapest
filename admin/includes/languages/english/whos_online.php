@@ -8,17 +8,17 @@
  */
 
 define('HEADING_TITLE', 'Who\'s Online');
-define('TABLE_HEADING_ONLINE', 'Online');
-define('TABLE_HEADING_CUSTOMER_ID', 'ID');
-define('TABLE_HEADING_FULL_NAME', 'Full Name');
+define('TABLE_HEADING_ONLINE', 'Activity');
+define('TABLE_HEADING_CUSTOMER_ID', 'Member<br>ID #');
+define('TABLE_HEADING_FULL_NAME', 'Name');
 define('TABLE_HEADING_IP_ADDRESS', 'IP Address');
 define('TABLE_HEADING_SESSION_ID', 'Session');
-define('TABLE_HEADING_ENTRY_TIME', 'Entry Time');
+define('TABLE_HEADING_ENTRY_TIME', 'Logon Time');
 define('TABLE_HEADING_LAST_CLICK', 'Last Click Time');
 define('TIME_PASSED_LAST_CLICKED', '<strong>Time Since Clicked:</strong> ');
-define('TABLE_HEADING_LAST_PAGE_URL', 'Last URL Viewed');
+define('TABLE_HEADING_LAST_PAGE_URL', 'Last Pages Viewed');
 define('TABLE_HEADING_ACTION', 'Action');
-define('TABLE_HEADING_SHOPPING_CART', 'Users Shopping Cart');
+define('TABLE_HEADING_SHOPPING_CART', 'Member Shopping Cart');
 define('TEXT_SHOPPING_CART_SUBTOTAL', 'Subtotal');
 define('TEXT_NUMBER_OF_CUSTOMERS', 'Currently there are %s customers online');
 
@@ -32,9 +32,9 @@ define('WHOS_ONLINE_INACTIVE_LAST_CLICK_TEXT', 'Inactive is Last Click >=');
 define('WHOS_ONLINE_INACTIVE_ARRIVAL_TEXT', 'Inactive since arrival >');
 define('WHOS_ONLINE_REMOVED_TEXT', 'will be removed');
 
-define('TEXT_SESSION_ID', '<strong>Session ID:</strong> ');
-define('TEXT_HOST', '<strong>Host:</strong> ');
-define('TEXT_USER_AGENT', '<strong>User Agent:</strong> ');
+define('TEXT_SESSION_ID', '<strong>Session ID:&nbsp;</strong> ');
+define('TEXT_HOST', '<strong>Host:&nbsp;</strong> ');
+define('TEXT_USER_AGENT', '<strong>User Agent:&nbsp;</strong> ');
 define('TEXT_EMPTY_CART', '<strong>Empty Cart</strong>');
 define('TEXT_WHOS_ONLINE_FILTER_SPIDERS', 'Exclude Spiders?');
 define('TEXT_WHOS_ONLINE_FILTER_ADMINS', 'Exclude Admin IP Addresses?');
