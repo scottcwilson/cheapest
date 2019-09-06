@@ -127,6 +127,11 @@ if (!isset($flag_disable_header) || !$flag_disable_header) {
                                 </form>
                                 <!-- ====================================== -->
                             </div>
+<?php
+                                            if (!site_is_prod()) { 
+                                              echo '<font color="red">*** Test Site - NOT LIVE </font>'; 
+                                            }
+?>
                             <ul class="socials">
                                 <li><a href="<?php echo zen_href_link(FILENAME_DEFAULT);?>"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="<?php echo zen_href_link(FILENAME_DEFAULT);?>"><i class="fa fa-twitter"></i></a></li>
