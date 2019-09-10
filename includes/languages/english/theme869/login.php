@@ -19,9 +19,9 @@ define('TEXT_NEW_CUSTOMER_POST_INTRODUCTION_DIVIDER', '<span class="larger">Or</
 define('TEXT_NEW_CUSTOMER_POST_INTRODUCTION_SPLIT', 'Create a Member Profile with <strong>' . STORE_NAME . '</strong> which allows you to shop faster, track the status of your current orders, review your previous orders and take advantage of our other member\'s benefits.');
 
 define('HEADING_RETURNING_CUSTOMER', ' <font size="2">Due to recent security updates, some members are occasionally required to reset their account passwords.&nbsp; If your old password does not work, please click the green "Click Here To Reset Your password" button below.&nbsp; A temporary password will be emailed to you within 10-15 minutes.&nbsp; Please click this button only once, your reset link will arrive shortly.&nbsp; Resetting your password regularly can help keep your account secure, we recommend resetting your password every three to six months for maximum security.<br><span style="color:#0000ff;"><b>To Create A New Account,&nbsp; Scroll Down To The Next Section.</b></span></font><br><br><font size="4">Returning Members,&nbsp; Log In Here:</font><br>');
-define('HEADING_RETURNING_CUSTOMER_SPLIT', 'Returning Customers');
+define('HEADING_RETURNING_CUSTOMER_SPLIT', 'Member Entrance');
 
-define('TEXT_RETURNING_CUSTOMER_SPLIT', 'In order to continue, please login to your <strong>' . STORE_NAME . '</strong> account.');
+define('TEXT_RETURNING_CUSTOMER_SPLIT', 'In order to continue, please login to your <strong>' . STORE_NAME . '</strong> Members portal.');
 
 define('TEXT_PASSWORD_FORGOTTEN', 'Click Here To Reset Your Password');
 
