@@ -81,9 +81,9 @@ if ($num_products_count > 0) {
 	
     $products_price = '<strong>' . zen_get_products_display_price($specials_index->fields['products_id']) . '</strong>';
 	
-	$products_butt = '<a class="btn products-button" href="' . zen_href_link(zen_get_info_page($specials_index->fields['products_id']), 'cPath=' . $productsInCategory[$specials_index->fields['products_id']] . '&products_id=' . (int)$specials_index->fields['products_id']) . '">' . zen_image_button(BUTTON_IMAGE_GOTO_PROD_DETAILS, BUTTON_GOTO_PROD_DETAILS_ALT) . '</a>';
+	// $products_butt = '<a class="btn products-button" href="' . zen_href_link(zen_get_info_page($specials_index->fields['products_id']), 'cPath=' . $productsInCategory[$specials_index->fields['products_id']] . '&products_id=' . (int)$specials_index->fields['products_id']) . '">' . zen_image_button(BUTTON_IMAGE_GOTO_PROD_DETAILS, BUTTON_GOTO_PROD_DETAILS_ALT) . '</a>';
 	
-	$products_butt2 = '<a class="btn add-to-cart" href="' . zen_href_link(FILENAME_SPECIALS, zen_get_all_get_params(array('action')) . 'action=buy_now&products_id=' . $specials_index->fields["products_id"]) . '">' . zen_image_button(BUTTON_IMAGE_ADD_TO_CART, BUTTON_IN_CART_ALT) . '</a>';
+	// $products_butt2 = '<a class="btn add-to-cart" href="' . zen_href_link(FILENAME_SPECIALS, zen_get_all_get_params(array('action')) . 'action=buy_now&products_id=' . $specials_index->fields["products_id"]) . '">' . zen_image_button(BUTTON_IMAGE_ADD_TO_CART, BUTTON_IN_CART_ALT) . '</a>';
 
 	
     $img_col_w = SMALL_IMAGE_WIDTH + 43;
@@ -172,10 +172,6 @@ if ($num_products_count > 0) {
 					</div>
 						<div class="price">
 							' . str_replace('&nbsp;', '', $products_price) . '
-						</div>
-						<div class="product-buttons">
-							<div class="button">' . $products_butt2 . '</div>
-							<div class="button1">' . $products_butt . '</div>
 						</div>
 				</div>
 			</div>'
