@@ -70,7 +70,6 @@ The name is <i>Cheapest Dinar</i>, but we are the Banknote Pros!&nbsp; As a Memb
 <b>Want To Become A Member?</b></span></span>&nbsp;&nbsp; <span style="font-size:14px"><i>Be Sure To Carefully Read This Page --></i></b></span>&nbsp;&nbsp; <a href="http://www.cheapestdinar.com/index.php?main_page=page&amp;id=34"><img alt="" height="120" src="http://kmcintyre.startlogic.com/images/Become_a_member.png" width="120" /></a><br><br><br>
 
 
-
 Iraqi Dinar &#8226; Vietnam Dong &#8226; Zimbabwe Dollar &#8226; Chinese Yuan &#8226; Japanese Yen<br>India Rupee &#8226; Russian Ruble &#8226; Iranian Rial &#8226; Afghanistan Afghani &#8226; Emirate Dirham<br>Indonesian Rupiah &#8226; Iranian Rial &#8226; Maldives Rufiyaa &#8226; Korean Won &#8226; Syrian Pound<br>Silver Certificates &#8226; Gold Certificates &#8226; Large US Banknotes &#8226; Star Notes &#8226; Error Notes<br>24K Gold bars &#8226; Silver bars &#8226; Diamonds &#8226; Bitcoin &#8226; Crypto Currencies &#8226; Novelties<br><br><br>
 
 
@@ -95,21 +94,20 @@ Iraqi Dinar &#8226; Vietnam Dong &#8226; Zimbabwe Dollar &#8226; Chinese Yuan &#
 
 
 <center>
-<img alt="" src="http://www.clker.com/cliparts/a/a/6/a/13128387631183937920labor_day_sale_-hi.png" style="height: 200px; width: 525px;" />
+<a href="https://cheapestdinar.com/index.php?main_page=page&amp;id=3" target="_blank"><img alt="" src="https://gcaptain.com/wp-content/uploads/2017/11/black-friday-sale-nautical-10.42.18-PM.jpg" style="height: 250px; width: 520px;" /></a>
 <br>
-<span style="color:#0000ff"><span style="font-size:24px">
-<b>** Labor Day Weekend Sale ** </span></span><br>
+<span style="color:#ff0000"><span style="font-size:24px">
+<b>** Black Friday  Sale ** </span></span><br>
+<span style="font-size:24px"><span style="color:#000000">HAPPENING RIGHT NOW</span></span>
+<br>
 
-<span style="color:#ff0000"><span style="font-size:18px">
-<b>*</b> Up To 40% Off Selected Layaway Svcs!<br> 
-<b>*</b> Special Discounts On Select Banknotes!</span></span><br>
-
-<span style="color:#0000ff"><span style="font-size:16px">
-A Different Discount Offered In Each Layaway Category </span></span><br>
+<span style="color:#0000ff"><span style="font-size:18px">
+<b>*</b> Up To 35% Off Selected Layaway Svcs!<br>
+<b>*</b> Up To 30% Off Select Banknotes!<br> 
+<b>*</b> Special Savings On Renewal Codes!</span></span><br>
 
 <span style="color:#ff0000"><span style="font-size:16px">
-Sale Ends Tuesday Sept 3rd, 11:59pm EST</span></span><br>
-<span style="font-size:13px">*<i>All standard Sale rules & policies apply</i></span></b>
+This Sale Will End Without Prior Warning!</span></span><br>
 <br>
 
 </center>
