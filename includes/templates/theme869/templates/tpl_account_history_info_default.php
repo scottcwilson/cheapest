@@ -108,7 +108,20 @@ if (sizeof($statusArray)) {
     <tr>
         <td><?php echo zen_date_short($statuses['date_added']); ?></td>
         <td><?php echo $statuses['orders_status_name']; ?></td>
-        <td><?php echo (empty($statuses['comments']) ? '&nbsp;' : nl2br(zen_output_string_protected($statuses['comments']))); ?></td> 
+        <td>
+<?php 
+    if (empty($statuses['comments'])) {
+echo '&nbsp;'; 
+    } else {
+
+      if (empty($statuses['updated_by']) || (strpos($statuses['comments'], "<script") !== false)) {
+         echo nl2br(zen_output_string_protected($statuses['comments']));
+      } else {
+         echo nl2br(zen_output_string($statuses['comments']));
+      }
+    }
+?>
+       </td> 
      </tr>
 <?php
   }

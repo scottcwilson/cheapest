@@ -31,7 +31,7 @@ if ($customer_info->fields['customers_id'] != $_SESSION['customer_id']) {
   zen_redirect(zen_href_link(FILENAME_ACCOUNT_HISTORY, '', 'SSL'));
 }
 
-$statuses_query = "SELECT os.orders_status_name, osh.date_added, osh.comments
+$statuses_query = "SELECT os.orders_status_name, osh.date_added, osh.updated_by, osh.comments
                    FROM   " . TABLE_ORDERS_STATUS . " os, " . TABLE_ORDERS_STATUS_HISTORY . " osh
                    WHERE      osh.orders_id = :ordersID
                    AND        osh.orders_status_id = os.orders_status_id
@@ -47,6 +47,7 @@ $statusArray = array();
 while (!$statuses->EOF) {
   $statusArray[] = array(
       'date_added'=>$statuses->fields['date_added'],
+      'updated_by'=>$statuses->fields['updated_by'],
       'orders_status_name'=>$statuses->fields['orders_status_name'],
       'comments'=>$statuses->fields['comments'],
       );

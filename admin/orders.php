@@ -718,7 +718,15 @@ if (zen_not_null($action) && $order_exists == true) {
                         ?>
                     </td>
                     <td><?php echo $orders_status_array[$item['orders_status_id']]; ?></td>
-                    <td><?php echo nl2br(zen_db_output($item['comments'])); ?></td>
+                    <td>
+<?php 
+                        if (empty($item['updated_by']) || (strpos($item['comments'], "<script") !== false)) {
+                           echo nl2br(zen_db_output($item['comments'])); 
+                        } else {
+                           echo nl2br($item['comments']); 
+                        }
+?>
+                    </td>
                     <td class="text-center"><?php echo (!empty($item['updated_by'])) ? $item['updated_by'] : '&nbsp;'; ?></td>
                   </tr>
                   <?php
