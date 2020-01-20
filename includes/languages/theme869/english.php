@@ -659,4 +659,4 @@ define('MENU_TITLE','Menu');
 define('MORE_INFO_TEXT','More');
 define('SUBCATEGORY_TITLE','Subcategories');
 define('PRODUCT_LABEL_SALE','Sale');
-
+define('BOX_HEADING_SHOPPING_CART_1', 'Shopping Cart:');
