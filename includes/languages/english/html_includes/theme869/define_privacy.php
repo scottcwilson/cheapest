@@ -1,6 +1,14 @@
+<br><br>
 <br>
-<br>
-<br>
+<center>
+<img alt="" src="https://www.lapguard.in/wp-content/uploads/2018/07/iNNER-BANNER-Privacy-Policy.jpg" style="width: 650px; height: 125px;" />
+</center>
+<br><br>
+<span style="color:#000000;">
+<b><i>Last Updated:&nbsp; current reconstruction in progress</i></b>
+<br><br><br>
+
+<font size="2">
 Cheapest Dinar / Guardian Svcs, hereinafter referred to as Cheapest Dinar, Guardian Svcs, Guardian Services, Us, We, or Our, shall be the reference of Cheapest Dinar / Guardian Svcs when speaking about our policy statements
 <br>
 <br>
@@ -184,6 +192,7 @@ If at anytime you wish to stop receiving email notifications from us, simply rep
 
 Please allow 2-3 BUSINESS hours to receive a response:<br>
 </blockquote>
+</font>
 <br>
 <br>
 <br>

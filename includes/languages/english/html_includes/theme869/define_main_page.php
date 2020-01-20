@@ -94,20 +94,10 @@ Iraqi Dinar &#8226; Vietnam Dong &#8226; Zimbabwe Dollar &#8226; Chinese Yuan &#
 
 
 <center>
-<a href="https://cheapestdinar.com/index.php?main_page=page&amp;id=3" target="_blank"><img alt="" src="https://gcaptain.com/wp-content/uploads/2017/11/black-friday-sale-nautical-10.42.18-PM.jpg" style="height: 250px; width: 520px;" /></a>
+<a href="" target="_blank"><img alt="" src="" style="height: 250px; width: 520px;" /></a>
 <br>
-<span style="color:#ff0000"><span style="font-size:24px">
-<b>** Black Friday  Sale ** </span></span><br>
-<span style="font-size:24px"><span style="color:#000000">HAPPENING RIGHT NOW</span></span>
 <br>
-
-<span style="color:#0000ff"><span style="font-size:18px">
-<b>*</b> Up To 35% Off Selected Layaway Svcs!<br>
-<b>*</b> Up To 30% Off Select Banknotes!<br> 
-<b>*</b> Special Savings On Renewal Codes!</span></span><br>
-
-<span style="color:#ff0000"><span style="font-size:16px">
-This Sale Will End Without Prior Warning!</span></span><br>
+<br>
 <br>
 
 </center>
