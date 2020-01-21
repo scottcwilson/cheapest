@@ -95,7 +95,7 @@
       }
 	  
 	  
-		$the_button3 = '<div class="button"><a class="btn add-to-cart" href="' . zen_href_link(FILENAME_products_all, zen_get_all_get_params(array('action')) . 'action=buy_now&products_id=' . $products_all->fields["products_id"]) . '">' . zen_image_button(BUTTON_IMAGE_ADD_TO_CART, BUTTON_IN_CART_ALT) . '</a></div>';
+		$the_button3 = '<div class="button"><a class="btn add-to-cart" href="' . zen_href_link(FILENAME_PRODUCTS_ALL, zen_get_all_get_params(array('action')) . 'action=buy_now&products_id=' . $products_all->fields["products_id"]) . '">' . zen_image_button(BUTTON_IMAGE_ADD_TO_CART, BUTTON_IN_CART_ALT) . '</a></div>';
 		
 		$the_button1 = '<div class="button1"><a class="btn products-button" href="' . zen_href_link(zen_get_info_page($new_products->fields['products_id']), 'cPath=' . $productsInCategory[$products_all->fields['products_id']] . '&products_id=' . $products_all->fields['products_id']) . '">' . zen_image_button(BUTTON_IMAGE_GOTO_PROD_DETAILS, BUTTON_GOTO_PROD_DETAILS_ALT) . '</a></div>';
 		

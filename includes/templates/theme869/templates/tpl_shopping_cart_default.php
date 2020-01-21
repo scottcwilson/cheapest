@@ -63,8 +63,8 @@
         <th scope="col" id="scUnitHeading"><?php echo TABLE_HEADING_PRICE; ?></th>
         <th scope="col" id="scQuantityHeading"><?php echo TABLE_HEADING_QUANTITY; ?></th>
         <th scope="col" id="scTotalHeading"><?php echo TABLE_HEADING_TOTAL; ?></th>
-        <th scope="col" id="scRemoveHeading"><?php echo DELETE; ?></th>
-        <th scope="col" id="scUpdateQuantity"><?php echo REFRESH; ?></th>
+        <th scope="col" id="scRemoveHeading"><?php echo TABLE_HEADING_DELETE; ?></th>
+        <th scope="col" id="scUpdateQuantity"><?php echo TABLE_HEADING_REFRESH; ?></th>
      </tr>
          <!-- Loop through all products /-->
 <?php

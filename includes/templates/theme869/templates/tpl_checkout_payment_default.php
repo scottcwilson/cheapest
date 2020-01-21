@@ -95,6 +95,7 @@
 
 <?php
       }
+      if (!empty($selection[$i]['fields'])) {
       for ($j=0, $n2=sizeof($selection[$i]['fields']); $j<$n2; $j++) {
 ?>
 <fieldset>
@@ -105,6 +106,7 @@
 <?php echo $selection[$i]['fields'][$j]['field']; ?>
 </fieldset>
 <?php
+      }
       }
     }
 ?>
