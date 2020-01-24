@@ -14,6 +14,13 @@ $zco_notifier->notify('NOTIFY_HEADER_START_CONTACT_US');
 
 require DIR_WS_MODULES . zen_get_module_directory('require_languages.php');
 
+  if (!isset($_SESSION['customer_id']) || !$_SESSION['customer_id']) {
+    $_SESSION['navigation']->set_snapshot();
+    // zen_redirect(zen_href_link(FILENAME_LOGIN, '', 'SSL'));
+    // go to special explanation page 
+    zen_redirect(zen_href_link(FILENAME_EZPAGES, 'id=37', 'SSL'));
+  }
+
 $error = false;
 $enquiry = '';
 
