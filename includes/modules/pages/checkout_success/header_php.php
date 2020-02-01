@@ -103,6 +103,7 @@ if ($flag_global_notifications != '1') {
   $products_query = $db->bindVars($products_query, ':ordersID', $orders_id, 'integer');
   $products = $db->Execute($products_query);
 
+  $notificationsArray = array(); 
   foreach ($products as $product) {
     $notificationsArray[] = array('counter'=>$counter,
                                   'products_id'=>$product['products_id'],
@@ -111,7 +112,7 @@ if ($flag_global_notifications != '1') {
   }
 }
 
-$flag_show_products_notification = (CUSTOMERS_PRODUCTS_NOTIFICATION_STATUS == '1' and sizeof($notificationsArray)>0 and $flag_global_notifications != '1') ? true : false ;
+$flag_show_products_notification = (CUSTOMERS_PRODUCTS_NOTIFICATION_STATUS == '1' and !empty($notificationsArray) and $flag_global_notifications != '1') ? true : false ;
 
 
 $customer_has_gv_balance = false;
