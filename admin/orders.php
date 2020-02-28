@@ -494,11 +494,11 @@ if (zen_not_null($action) && $order_exists == true) {
               </tr>
               <tr>
                 <td><strong><?php echo ENTRY_TELEPHONE_NUMBER; ?></strong></td>
-                <td><a href="tel:<?php echo preg_replace('/\s+/', '', $order->customer['telephone']); ?>"><?php echo $order->customer['telephone']; ?></a></td>
+                <td><?php echo $order->customer['telephone']; ?></td>
               </tr>
               <tr>
                 <td><strong><?php echo ENTRY_EMAIL_ADDRESS; ?></strong></td>
-                <td><?php echo '<a href="mailto:' . $order->customer['email_address'] . '">' . $order->customer['email_address'] . '</a>'; ?></td>
+                <td><?php echo $order->customer['email_address']; ?></td>
               </tr>
               <tr>
                 <td><strong><?php echo TEXT_INFO_IP_ADDRESS; ?></strong></td>
