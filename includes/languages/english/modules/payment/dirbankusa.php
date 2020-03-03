@@ -20,7 +20,8 @@
 // $Id: DIRBANKUSA.php 1970 2009-11-24 06:57:21Z CRYSTAL JONES $
 //
 
-
+define('MODULE_PAYMENT_DIRBANKUSA_TEXT_TITLE', 'Banking Online Bill Pay');
+if (defined('MODULE_PAYMENT_DIRBANKUSA_SORT_ORDER')) {
   define('MODULE_PAYMENT_DIRBANKUSA_TEXT_EMAIL_FOOTER', 
   "Please use the following details to transfer your total order value:\n\n" .
   "\nAccount No.:   " . MODULE_PAYMENT_DIRBANKUSA_ACCNUM .
@@ -29,7 +30,6 @@
   "\nBank Name:     " . MODULE_PAYMENT_DIRBANKUSA_BANKNAM .
   "\n\nThanks for your order which will ship immediately once we receive payment in the above account.\n");
 
-  define('MODULE_PAYMENT_DIRBANKUSA_TEXT_TITLE', 'Banking Online Bill Pay');
    define('MODULE_PAYMENT_DIRBANKUSA_TEXT_DESCRIPTION', 
   '<BR>Please use the following details to transfer your total order value:<br><pre>' . 
   "\nAccount No.:    " . MODULE_PAYMENT_DIRBANKUSA_ACCNUM .
@@ -37,4 +37,5 @@
   "\nAccount Name:   " . MODULE_PAYMENT_DIRBANKUSA_ACCNAM . 
   "\nBank Name:      " . MODULE_PAYMENT_DIRBANKUSA_BANKNAM .
   '</pre><p>Thanks for your order which will ship immediately once we receive payment in the above account.');
+}
 ?>

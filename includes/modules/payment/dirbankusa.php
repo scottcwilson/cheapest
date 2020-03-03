@@ -24,15 +24,18 @@
     var $code, $title, $description, $enabled;
 
 // class constructor
-    function dirbankusa() {
+    function __construct() {
       global $order;
 
       $this->code = 'dirbankusa';
       $this->title = MODULE_PAYMENT_DIRBANKUSA_TEXT_TITLE;
+      $this->sort_order = defined('MODULE_PAYMENT_DIRBANKUSA_SORT_ORDER') ? MODULE_PAYMENT_DIRBANKUSA_SORT_ORDER : null;
+      $this->enabled = (defined('MODULE_PAYMENT_DIRBANKUSA_STATUS') && MODULE_PAYMENT_DIRBANKUSA_STATUS == 'True');
+
+      if (null === $this->sort_order) return false;
       $this->description = MODULE_PAYMENT_DIRBANKUSA_TEXT_DESCRIPTION;
+
       $this->email_footer = MODULE_PAYMENT_DIRBANKUSA_TEXT_EMAIL_FOOTER;
-      $this->sort_order = MODULE_PAYMENT_DIRBANKUSA_SORT_ORDER;
-      $this->enabled = ((MODULE_PAYMENT_DIRBANKUSA_STATUS == 'True') ? true : false);
 
       if ((int)MODULE_PAYMENT_DIRBANKUSA_ORDER_STATUS_ID > 0) {
         $this->order_status = MODULE_PAYMENT_DIRBANKUSA_ORDER_STATUS_ID;

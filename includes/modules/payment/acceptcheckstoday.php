@@ -21,18 +21,19 @@
 
     var $code, $title, $description, $enabled;
 
-    function acceptcheckstoday() {
+    function __construct() {
 
       global $order;
 			
       $this->code = 'acceptcheckstoday';;
       $this->title =  basename($_SERVER['SCRIPT_FILENAME']) == 'modules.php' ? MODULE_PAYMENT_ACCEPTCHECKSTODAY_TEXT_TITLE : MODULE_PAYMENT_ACCEPTCHECKSTODAY_TEXT_PUBLIC_TITLE ;
       $this->description = MODULE_PAYMENT_ACCEPTCHECKSTODAY_TEXT_DESCRIPTION;
-      
-			$this->sort_order = MODULE_PAYMENT_ACCEPTCHECKSTODAY_SORT_ORDER;
-      $this->email_footer = '';
-      $this->enabled = ((MODULE_PAYMENT_ACCEPTCHECKSTODAY_STATUS == 'True') ? true : false);
+      $this->sort_order = defined('MODULE_PAYMENT_ACCEPTCHECKSTODAY_SORT_ORDER') ? MODULE_PAYMENT_ACCEPTCHECKSTODAY_SORT_ORDER : null;
+      $this->enabled = (defined('MODULE_PAYMENT_ACCEPTCHECKSTODAY_STATUS') && MODULE_PAYMENT_ACCEPTCHECKSTODAY_STATUS == 'True');
 
+      if (null === $this->sort_order) return false;
+
+      $this->email_footer = '';
       if ((int)MODULE_PAYMENT_ACCEPTCHECKSTODAY_ORDER_STATUS_ID_PENDING > 0)
         $this->order_status = MODULE_PAYMENT_ACCEPTCHECKSTODAY_ORDER_STATUS_ID_PENDING;
 
