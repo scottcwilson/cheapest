@@ -135,7 +135,7 @@ define('FOOTER_TEXT_BODY', 'Copyright &copy; ' . date('Y') . ' <a href="' . zen_
   define('BOX_HEADING_INFORMATION', 'Information');
   define('BOX_INFORMATION_PRIVACY', 'Privacy Notice');
   define('BOX_INFORMATION_CONDITIONS', 'Conditions of Use');
-  define('BOX_INFORMATION_SHIPPING', 'Shipping &amp; Returns');
+  define('BOX_INFORMATION_SHIPPING', 'Shipping Policy');
   define('BOX_INFORMATION_CONTACT', 'Contact Us');
   define('BOX_INFORMATION_UNSUBSCRIBE', 'Newsletter Unsubscribe');
 

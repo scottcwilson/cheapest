@@ -29,9 +29,22 @@ if (!isset($flag_disable_footer) || !$flag_disable_footer) {
 		<div class="footer-menu col-xs-12 col-sm-3">
             <h2 class="title_btn1"><?php echo HEADER_TITLE_QUICK_LINKS; ?></h2>
 			<?php //echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . '">'. HEADER_TITLE_CATALOG . '</a>'; ?>
-			<?php if (EZPAGES_STATUS_FOOTER == '1' or (EZPAGES_STATUS_FOOTER == '2' and (strstr(EXCLUDE_ADMIN_IP_FOR_MAINTENANCE, $_SERVER['REMOTE_ADDR'])))) { ?>
+			<?php /* if (EZPAGES_STATUS_FOOTER == '1' or (EZPAGES_STATUS_FOOTER == '2' and (strstr(EXCLUDE_ADMIN_IP_FOR_MAINTENANCE, $_SERVER['REMOTE_ADDR'])))) { ?>
 			<?php require($template->get_template_dir('tpl_ezpages_bar_footer.php',DIR_WS_TEMPLATE, $current_page_base,'templates'). '/tpl_ezpages_bar_footer.php'); ?>
-			<?php } ?>
+      <?php } */ ?>
+       <ul>
+          <li><a href="index.php?main_page=page&id=3">ON SALE</a></li>
+				<li><a href="index.php?main_page=gv_faq">Gift Certificates</a></li>
+				<li><a href="index.php?main_page=discount_coupon">Discount Coupons</a></li>
+          <li><a href="index.php?main_page=page&id=25">Coupon Codes</a></li>
+          <li><a href="index.php?main_page=page&id=36">We Buy Silver</a></li>
+          <li><a href="index.php?main_page=page&id=35">US Banknotes</a></li>
+          <li><a href="index.php?main_page=page&id=13">Grading Scale</a></li>
+<!--
+          <li><a href="index.php?main_page=page&id=13">Grading Service</a></li>
+-->
+				<li><a href="index.php?main_page=unsubscribe">Newsletter Unsubscribe</a></li>
+       </ul>
 		</div>
         <div class="account col-xs-12 col-sm-3 mb">
         	<h2 class="title_btn2"><?php echo TITLE_CUSTOMERS; ?></h2>
@@ -44,23 +57,26 @@ if (!isset($flag_disable_footer) || !$flag_disable_footer) {
                 <li><a href="<?php echo zen_href_link(FILENAME_LOGIN, '', 'SSL'); ?>"><?php echo HEADER_TITLE_LOGIN; ?></a></li>
                 <li><a href="<?php echo zen_href_link(FILENAME_CREATE_ACCOUNT, '', 'SSL'); ?>"><?php echo HEADER_TITLE_CREATE_ACCOUNT; ?></a></li>
                     <?php } ?>
-                    <?php if (DEFINE_SHIPPINGINFO_STATUS <= 1) { ?>
-                <li><a href="<?php echo zen_href_link(FILENAME_SHIPPING); ?>"><?php echo BOX_INFORMATION_SHIPPING; ?></a></li>
-                    <?php } ?>
-                    <?php if (DEFINE_PRIVACY_STATUS <= 1)  { ?>
-                <li><a href="<?php echo zen_href_link(FILENAME_PRIVACY); ?>"><?php echo BOX_INFORMATION_PRIVACY; ?></a></li>
-                    <?php } ?>
+              <li><a href="index.php?main_page=page&id=34">New Members</a></li>
+              <li><a href="index.php?main_page=page&id=4">Refer-A-Friend</a></li>
+              <li><a href="index.php?main_page=page_2">Help &amp; Support</a></li>
+
+                <li><a href="index.php?main_page=contact_us">Contact Us</a></li>
              </ul>   
         </div>
         <div class="social col-xs-12 col-sm-3 mb">
+          <!-- Information Links --> 
         	<h2 class="title_btn3"><?php echo BOX_HEADING_SOCIAL; ?></h2>
             <ul class="social_list">
+              <li><a href="index.php?main_page=page&id=16">Payment Policies</a></li>
+              <li><a href="index.php?main_page=page&id=17">Flexpay Policies</a></li>
+              <li><a href="<?php echo zen_href_link(FILENAME_SHIPPING); ?>"><?php echo BOX_INFORMATION_SHIPPING; ?></a></li>
+              <li><a href="index.php?main_page=page&id=39">Returns &amp; Refunds Policy</a></li>
             	<li><a href="index.php?main_page=conditions">Conditions of Use</a></li>
-                <li><a href="index.php?main_page=contact_us">Contact Us</a></li>
-				<li><a href="index.php?main_page=gv_faq">Gift Certificates</a></li>
-				<li><a href="index.php?main_page=discount_coupon">Discount Coupons</a></li>
-				<li><a href="index.php?main_page=unsubscribe">Newsletter Unsubscribe</a></li>
-				<li><a href="index.php?main_page=site_map">Sitemap</a></li>
+                <li><a href="<?php echo zen_href_link(FILENAME_PRIVACY); ?>"><?php echo BOX_INFORMATION_PRIVACY; ?></a></li>
+				      <li><a href="index.php?main_page=site_map">Sitemap</a></li>
+<!--
+-->
                 
             </ul>
         </div>
