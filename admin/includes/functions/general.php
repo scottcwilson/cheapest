@@ -1654,10 +1654,14 @@ while (!$chk_sale_categories_all->EOF) {
     global $currencies;
 
     if (DISPLAY_PRICE_WITH_TAX_ADMIN == 'true') {
-      return zen_round($price, $currencies->currencies[DEFAULT_CURRENCY]['decimal_places']) + zen_calculate_tax($price, $tax);
+//-bof-edit_orders-lat9: Don't pre-round values, aligning with storefront
+//      return zen_round($price, $currencies->currencies[DEFAULT_CURRENCY]['decimal_places']) + zen_calculate_tax($price, $tax);
+      return $price + zen_calculate_tax($price, $tax);
     } else {
-      return zen_round($price, $currencies->currencies[DEFAULT_CURRENCY]['decimal_places']);
+//      return zen_round($price, $currencies->currencies[DEFAULT_CURRENCY]['decimal_places']);
+      return $price;
     }
+//-eof-edit_orders-lat9
   }
 
 /**
