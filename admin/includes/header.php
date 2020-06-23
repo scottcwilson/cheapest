@@ -147,6 +147,9 @@ if (defined('MODULE_ORDER_TOTAL_GV_SHOW_QUEUE_IN_ADMIN') && MODULE_ORDER_TOTAL_G
 ?>
 <!-- All HEADER_ definitions in the columns below are defined in includes/languages/english.php //-->
   <div class="row">
+<?php if(is_file(DIR_WS_INCLUDES . 'notes_buttons.php')) include(DIR_WS_INCLUDES . 'notes_buttons.php'); ?>
+  </div>
+  <div class="row">
     <div class="col-xs-8 col-sm-3" id="adminHeaderLogo">
         <?php echo '<a href="' . zen_href_link(FILENAME_DEFAULT) . '">' . zen_image(DIR_WS_IMAGES . HEADER_LOGO_IMAGE, HEADER_ALT_TEXT, HEADER_LOGO_WIDTH, HEADER_LOGO_HEIGHT) . '</a>'; ?>
     </div>

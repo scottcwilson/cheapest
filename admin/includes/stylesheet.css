@@ -758,3 +758,10 @@ input.faint {
     }
 }
 /* end of print-specific styles */
+
+#box_notes_buttons{
+float: right;
+}
+#box_notes_buttons *{
+float: left;
+}

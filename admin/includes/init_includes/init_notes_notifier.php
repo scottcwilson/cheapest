@@ -64,7 +64,7 @@ function zen_active_notes(){
                  // these notes must only be shown when the customer/order/category/product is viewed by the admin 
      
                 // customers note
-                if(isset($_GET['cID']) && ($_GET['cID'] == $notes_active->customers_id) ||(($notes_customer_result->fields['customers_id'] > 0) && ($notes_customer_result->fields['customers_id'] == $notes_active->customers_id)))    
+                if(isset($_GET['cID']) && ($_GET['cID'] == $notes_active->customers_id) && !isset($_GET['gID']) ||(($notes_customer_result->fields['customers_id'] > 0) && ($notes_customer_result->fields['customers_id'] == $notes_active->customers_id)) && !isset($_GET['gID']))    
                   $messageStackArray[] = '<a href="' . $note_link . '&action=view' . '">' . $notes_active_results->fields['notes_title'] . '</a> (Special Customers note)';
                 // orders note   
                 if(isset($_GET['oID']) && ($_GET['oID'] == $notes_active->orders_id))              
@@ -77,7 +77,7 @@ function zen_active_notes(){
                   $messageStackArray[] = '<a href="' . $note_link . '">' . $notes_active_results->fields['notes_title'] . '</a> (Special Products note)';      
               }else{
                 // note is not attached yet  
-                if(isset($_GET['pID']) || isset($_GET['cPath']) || isset($_GET['oID']) || isset($_GET['cID'])){
+                if(isset($_GET['pID']) && !isset($_GET['gID']) || isset($_GET['cPath']) && !isset($_GET['gID']) || isset($_GET['oID']) && !isset($_GET['gID']) || isset($_GET['cID']) && !isset($_GET['gID'])){
                   $parameters = '';
                   $parameters = ((isset($_GET['cPath'])) ? '&cPath=' . $_GET['cPath'] : '') . ((isset($_GET['pID'])) ? '&pID=' . (int)$_GET['pID'] : '') . ((isset($_GET['oID'])) ? '&oID=' . (int)$_GET['oID'] : '') .((isset($_GET['cID'])) ? '&cID=' . (int)$_GET['cID'] : '') ; 
                   $messageStackArray[] = 'Attach this ' . ' note now? ' . '<a href="' . $note_link . '&action=edit' . $parameters . '">' . $notes_active_results->fields['notes_title'] . '</a>';

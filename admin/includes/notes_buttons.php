@@ -8,7 +8,7 @@ define('BUTTON_ADD_PRODUCTS_NOTE', 'Add Products note');
 define('BUTTON_ADD_CATEGORIES_NOTE', 'Add Categories note');
 define('BUTTON_ADD_NOTE', 'Add note');
 
-if(isset($_GET['cID']) && (int)$_GET['cID'] > 0){
+if((basename($PHP_SELF) == FILENAME_CUSTOMERS . ".php") && (int)$_GET['cID'] > 0){
   echo '<a target="_blank" href="' . zen_href_link(FILENAME_NOTES) . '?action=insert_new&cID=' . (int)$_GET['cID'] . '">' . zen_image_button('button_add_customers_note.gif', BUTTON_ADD_CUSTOMERS_NOTE) . '</a>';
 }
 

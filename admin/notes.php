@@ -90,7 +90,7 @@ function zen_insert_new_note(){
   $notes_is_public = (int)NOTES_IS_PUBLIC_DEFAULT;
   
   switch(TRUE){
-     case(isset($_GET['cID']) && (int)$_GET['cID'] > 0):
+     case(isset($_GET['cID']) && (int)$_GET['cID'] > 0 && !isset($_GET['gID'])):
       $customers_id = (int)$_GET['cID'];        
       break;
   
